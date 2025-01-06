@@ -9,4 +9,3 @@
 
 # probability that two [independent] events occur simultaneously 
 # P(A and B) = P(A) * P(B)
-
