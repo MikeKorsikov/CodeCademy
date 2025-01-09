@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import codecademylib3
+
 
 population = pd.read_csv("salmon_population.csv")
 population = np.array(population.Salmon_Weight)
