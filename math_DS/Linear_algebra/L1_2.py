@@ -12,7 +12,9 @@ C = np.array([[1, 2], [3, 4], [5, 6]])
 D = 4*A - 2*B
 
 # Calculate E = AC
-E = A * C
+E = A @ C
 print(E)
 
 # Calculate F = CA
+F = np.matmul(C, A)
+print(F)
