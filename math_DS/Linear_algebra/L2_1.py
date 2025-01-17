@@ -34,11 +34,11 @@ random_img = np.random.randint(0,255, (7,7))
 show_image(random_img, "Random Image")
 
 # Solve for heart image
-random_img_flat = random_img.reshape(7 * 7, 1)
-heart_img_flat = heart_img.flatten()
-x_flat = np.linalg.solve(random_img_flat, heart_img_flat)
-x = x_flat.reshape(7, 7)
+# Solve for heart image
+x = np.linalg.solve(random_img, heart_img)
+solved_heart_img = np.matmul(random_img, x)
 show_image(x, "x")
+show_image(solved_heart_img, "Solved Heart Image")
 
 
 
