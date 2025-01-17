@@ -3,6 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 heart_img = np.array([[255,0,0,255,0,0,255],
               [0,255/2,255/2,0,255/2,255/2,0],
           [0,255/2,255/2,255/2,255/2,255/2,0],
@@ -18,16 +19,28 @@ def show_image(image, name_identifier):
   plt.show()
 
 # Show heart image
-
+show_image(heart_img, "Heart image")
 
 # Invert color
-
+inverted_heart_img = 255 - heart_img
+show_image(inverted_heart_img, "Inverted Heart Image")
 
 # Rotate heart
-
+rotated_heart_img = heart_img.T
+show_image(rotated_heart_img, "“Rotated Heart Image.")
 
 # Random Image
-
+random_img = np.random.randint(0,255, (7,7))
+show_image(random_img, "Random Image")
 
 # Solve for heart image
+random_img_flat = random_img.reshape(7 * 7, 1)
+heart_img_flat = heart_img.flatten()
+x_flat = np.linalg.solve(random_img_flat, heart_img_flat)
+x = x_flat.reshape(7, 7)
+show_image(x, "x")
+
+
+
+
 
