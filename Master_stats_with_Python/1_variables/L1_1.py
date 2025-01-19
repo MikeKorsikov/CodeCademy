@@ -7,8 +7,9 @@ import pandas as pd
 movies = pd.read_csv("Master_stats_with_Python/1_variables/netflix_movies.csv", index_col=0)
 
 # View the first five rows of the dataframe
-
+print(movies.head())
+print(movies.info())
 
 # Set the correct value for rating_variable_type
-rating_variable_type = None
+rating_variable_type = 'categorical'
 print(rating_variable_type)
