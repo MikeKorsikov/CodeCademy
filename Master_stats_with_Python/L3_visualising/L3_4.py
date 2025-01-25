@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 maximum = max(songs)
 minimum = min(songs)
 #Create the variable song_range here:
-
+song_range  = maximum - minimum
 
 # Ignore the code below here
 plt.hist(songs, bins = 200)
