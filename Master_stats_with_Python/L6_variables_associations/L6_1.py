@@ -1,9 +1,27 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn as sns
+from scipy.stats import pearsonr
 
-students = pd.read_csv('Codecademy\Master_stats_with_Python\L6_variables_associations\students.csv')
+np.set_printoptions(suppress=True, precision = 1) 
 
-#print the first five rows of students:
+penguins = pd.read_csv('penguins.csv')
 
+#print the first few rows
+print(penguins.head())
 
-#separate out scores for students who live in urban and rural locations:
+#create a scatter plot
+plt.scatter(penguins.flipper_length_mm, penguins.body_mass_g)
+plt.show()
+
+#calculate covariance:
+covariance_mat = np.cov(penguins.flipper_length_mm, penguins.body_mass_g)
+print("covariance matrix: ")
+print(covariance_mat)
+
+print("covariance: ", covariance_mat[1][0])
+
+#calculate correlation:
+correlation, p = pearsonr(penguins.flipper_length_mm, penguins.body_mass_g)
+print("correlation: ", correlation)
