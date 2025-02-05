@@ -8,6 +8,9 @@ data = pd.read_csv("Codecademy\Master_stats_with_Python\L8_hypothesis_testing\ab
 print(data.head())
 
 # calculate contingency table here
-
+ab_contingency = pd.crosstab(data.Web_Version, data.Purchased)
+print(ab_contingency)
 
 # run your chi square test here
+chi2, pval, dof, expected = chi2_contingency(ab_contingency)
+print(pval)
