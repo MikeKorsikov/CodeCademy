@@ -8,7 +8,7 @@ import seaborn as sns
 import statsmodels.api as sm
 
 # Read in the data
-codecademy = pd.read_csv('codecademy.csv')
+codecademy = pd.read_csv('Codecademy\Master_stats_with_Python\L9_linear_regression\codecademy.csv')
 
 # Print the first five rows
 print(codecademy.head())

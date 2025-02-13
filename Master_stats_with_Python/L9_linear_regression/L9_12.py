@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-student = pd.read_csv('student.csv')
+student = pd.read_csv('Codecademy\Master_stats_with_Python\L9_linear_regression\student.csv')
 
 model1 = sm.OLS.from_formula('port3 ~ math1 + address', data=student).fit()
 
