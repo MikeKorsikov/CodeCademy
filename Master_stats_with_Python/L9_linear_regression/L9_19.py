@@ -3,7 +3,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 import numpy as np
-import codecademylib3
 
 hp = pd.read_csv('hp.csv')
 
