@@ -1,5 +1,5 @@
 # Log Transformations
-# Algerian Forest Fires
+# Algerian Forest Fires project
 
 #import libraries
 import pandas as pd
