@@ -9,15 +9,26 @@ import statsmodels.api as sm
 np.random.seed(1)
 
 # Import data
-housing = pd.read_csv('craigslist.csv')
+housing = pd.read_csv('Codecademy\\Master_stats_with_Python\L9_linear_regression\craiglist.csv')
+print(housing.head())
 
 # Fit model1
+print("\nExercise 1:")
+model1 = sm.OLS.from_formula('price ~ type + sqfeet + beds + baths', data=housing).fit()
+print(model1.params)
 
 # Fit model2
+print("\nExercise 2:")
+model2 = sm.OLS.from_formula('price ~ type + sqfeet + beds + baths + comes_furnished + laundry_options + parking_options + smoking_allowed', data=housing).fit()
+print(model2.params)
 
 # Fit model3
+print("\nExercise 3:")
+model3 = sm.OLS.from_formula('price ~ type + sqfeet + beds + baths + comes_furnished + laundry_options + parking_options + smoking_allowed + cats_allowed + dogs_allowed', data=housing).fit()
+print(model3.params)
 
 # Print R-squared for all models
+
 
 # Print adjusted R-squared for all models
 
