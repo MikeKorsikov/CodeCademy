@@ -1,5 +1,6 @@
 #Adjusted R-squared
 # gives a small penalty for each additional predictor in a model
+# smaller is better?
 
 # Load libraries
 import pandas as pd

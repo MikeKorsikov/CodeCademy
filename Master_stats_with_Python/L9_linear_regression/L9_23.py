@@ -1,4 +1,5 @@
 # Overfitting
+# Smaller R-squared is better
 
 # Load libraries
 import pandas as pd
