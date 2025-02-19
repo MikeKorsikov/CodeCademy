@@ -28,6 +28,10 @@ model3 = sm.OLS.from_formula('price ~ type + sqfeet + beds + baths + comes_furni
 print(model3.params)
 
 # Print R-squared for all models
+print("\nExercise 4:")
+print(f"Model 1 R-square: {model1.rsquared}") #Output: 0.127
+print(f"Model 2 R-square: {model2.rsquared}") #Output: 0.281
+print(f"Model 3 R-square: {model3.rsquared}") #Output: 0.283
 
 
 # Print adjusted R-squared for all models
