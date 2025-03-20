@@ -27,54 +27,183 @@ conversion = {"M": 1000000,
               "B": 1000000000}
 
 # test function by updating damages
+print(f"\nExercise 1:")
+def convert_damages(damages):
+    conversion = {"M": 1_000_000, "B": 1_000_000_000}
+    converted_damages = []
+    
+    for damage in damages:
+        if damage == "Damages not recorded":
+            converted_damages.append(damage)
+        else:
+            value, unit = damage[:-1], damage[-1]  # Extract number and unit (M/B)
+            converted_damages.append(float(value) * conversion[unit])  # Convert to float
+            
+    return converted_damages
+
+# Test the function
+updated_damages = convert_damages(damages)
+print(updated_damages)
 
 
 # 2 
 # Create a Table
+print(f"\nExercise 2:")
+def create_hurricane_dict(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths):
+    hurricanes = {}
+
+    for i in range(len(names)):
+        hurricanes[names[i]] = {
+            "Name": names[i],
+            "Month": months[i],
+            "Year": years[i],
+            "Max Sustained Wind": max_sustained_winds[i],
+            "Areas Affected": areas_affected[i],
+            "Damage": updated_damages[i],
+            "Deaths": deaths[i]
+        }
+
+    return hurricanes
 
 # Create and view the hurricanes dictionary
+hurricane_dict = create_hurricane_dict(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths)
+print(hurricane_dict)
 
 # 3
 # Organizing by Year
+print(f"\nExercise 3:")
+# Organize hurricanes by year
+def organize_by_year(hurricane_dict):
+    hurricanes_by_year = {}
+
+    for hurricane in hurricane_dict.values():  # Iterate over hurricane data
+        year = hurricane["Year"]
+        
+        if year not in hurricanes_by_year:
+            hurricanes_by_year[year] = []  # Create list if year doesn't exist
+        
+        hurricanes_by_year[year].append(hurricane)  # Append hurricane data to the year
+
+    return hurricanes_by_year
 
 # create a new dictionary of hurricanes with year and key
-
+hurricanes_by_year = organize_by_year(hurricane_dict)
+print(hurricanes_by_year)
 
 # 4
 # Counting Damaged Areas
+print(f"\nExercise 4:")
+# Count how often each area was affected
+def count_affected_areas(hurricane_dict):
+    affected_counts = {}
+
+    for hurricane in hurricane_dict.values():  # Loop through hurricanes
+        for area in hurricane["Areas Affected"]:  # Loop through affected areas
+            if area not in affected_counts:
+                affected_counts[area] = 1  # Initialize count
+            else:
+                affected_counts[area] += 1  # Increment count
+
+    return affected_counts
 
 # create dictionary of areas to store the number of hurricanes involved in
-
+affected_area_counts = count_affected_areas(hurricane_dict)
+print(affected_area_counts)
 
 # 5 
 # Calculating Maximum Hurricane Count
+print(f"\nExercise 5:")
+def most_affected_area(affected_area_counts):
+    max_area = max(affected_area_counts, key=affected_area_counts.get)  # Find the area with max occurrences
+    return max_area, affected_area_counts[max_area]  # Return area and count
 
 # find most frequently affected area and the number of hurricanes involved in
-
+most_affected, times_hit = most_affected_area(affected_area_counts)
+print(f"The most affected area is {most_affected}, hit {times_hit} times.")
 
 # 6
 # Calculating the Deadliest Hurricane
+print(f"\nExercise 6:")
+def deadliest_hurricane(hurricane_dict):
+    deadliest = max(hurricane_dict.values(), key=lambda h: h["Deaths"])  # Find hurricane with max deaths
+    return deadliest["Name"], deadliest["Deaths"]  # Return hurricane name and deaths
 
 # find highest mortality hurricane and the number of deaths
+deadliest_name, max_deaths = deadliest_hurricane(hurricane_dict)
+print(f"The deadliest hurricane is {deadliest_name}, causing {max_deaths} deaths.")
 
 # 7
 # Rating Hurricanes by Mortality
+print(f"\nExercise 7:")
 
+mortality_scale = {0: 0,
+                   1: 100,
+                   2: 500,
+                   3: 1000,
+                   4: 10000}
 
+def categorize_by_mortality(hurricane_dict, mortality_scale):
+    mortality_categories = {key: [] for key in mortality_scale}  # Initialize categories
+
+    for hurricane in hurricane_dict.values():  # Loop through hurricanes
+        deaths = hurricane["Deaths"]
+        
+        # Determine mortality rating based on scale
+        for rating, upper_bound in mortality_scale.items():
+            if deaths <= upper_bound:
+                mortality_categories[rating].append(hurricane)  # Assign hurricane to category
+                break  # Stop checking after finding the correct category
+
+    return mortality_categories
 # categorize hurricanes in new dictionary with mortality severity as key
-
+hurricanes_by_mortality = categorize_by_mortality(hurricane_dict, mortality_scale)
+for rating, hurricanes in hurricanes_by_mortality.items():
+    print(f"Mortality Rating {rating}: {len(hurricanes)} hurricanes")
 
 # 8 Calculating Hurricane Maximum Damage
+print(f"\nExercise 8:")
+def most_costly_hurricane(hurricane_dict):
+    costly_hurricanes = [
+        h for h in hurricane_dict.values() if isinstance(h["Damage"], (int, float))
+    ]  # Filter out hurricanes without recorded damage
+    
+    if not costly_hurricanes:
+        return "No valid data available."
+
+    most_costly = max(costly_hurricanes, key=lambda h: h["Damage"])  # Find hurricane with max damage
+    return most_costly["Name"], most_costly["Damage"]
 
 # find highest damage inducing hurricane and its total cost
-
+costliest_name, max_damage = most_costly_hurricane(hurricane_dict)
+print(f"The most costly hurricane is {costliest_name}, causing ${max_damage:,} in damages.")
 
 # 9
 # Rating Hurricanes by Damage
+print(f"\nExercise 9:")
 damage_scale = {0: 0,
                 1: 100000000,
                 2: 1000000000,
                 3: 10000000000,
                 4: 50000000000}
-  
+
+def categorize_by_damage(hurricane_dict, damage_scale):
+    damage_categories = {key: [] for key in damage_scale}  # Initialize categories
+
+    for hurricane in hurricane_dict.values():  # Loop through hurricanes
+        damage = hurricane["Damage"]
+        
+        # Only process hurricanes with numerical damage values
+        if isinstance(damage, (int, float)):
+            for rating, upper_bound in damage_scale.items():
+                if damage <= upper_bound:
+                    damage_categories[rating].append(hurricane)  # Assign hurricane to category
+                    break  # Stop checking after finding the correct category
+
+    return damage_categories
+
 # categorize hurricanes in new dictionary with damage severity as key
+hurricanes_by_damage = categorize_by_damage(hurricane_dict, damage_scale)
+
+# Print summary
+for rating, hurricanes in hurricanes_by_damage.items():
+    print(f"Damage Rating {rating}: {len(hurricanes)} hurricanes")
