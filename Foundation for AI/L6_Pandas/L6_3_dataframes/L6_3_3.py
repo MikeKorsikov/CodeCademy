@@ -22,3 +22,18 @@ march_april = df[(df.month == "March") | (df.month == "April")]
 print(march_april) 
 
 # Select Rows with Logic III
+january_february_march = df[df.month.isin(['January','February','March'])]
+print(january_february_march)
+
+# setting inices
+# 1) only old index visible
+df2 = df.loc[[1, 3, 5]]
+print(df2)
+
+# 2) introduce new but keep old
+df3 = df2.reset_index()
+print(df3)
+
+# 3) only new index is visible
+df2.reset_index(inplace=True, drop=True)
+print(df2)
