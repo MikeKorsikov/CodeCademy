@@ -10,35 +10,25 @@ stream_handler = logging.StreamHandler(sys.stdout)
 # step 3 - add stream handler to logger object
 logger.addHandler(stream_handler)
 
-# Values of logging levels
-print(logging.NOTSET)
-print(logging.DEBUG)
-print(logging.INFO)
-print(logging.WARNING)
-print(logging.ERROR)
-print(logging.CRITICAL)
+# step 4 - set the logging level (e.g. DEBUG)
+logger.setLevel(logging.DEBUG)
 
-# methods to log messages at different levels
-logger.debug("This is a DEBUG message!")
-logger.log(logging.DEBUG, "This is an DEBUG message!")
-
-# Example
+#
 def division():
+  logger.debug("Starting Division!")
   try:
     dividend = float(input("Enter the dividend: "))
     logger.info(dividend)
     divisor = float(input("Enter the divisor: "))
     logger.info(divisor)
-  except ValueError:
+  except SyntaxError:
     logger.log(logging.CRITICAL, "No dividend or divisor value entered!")
-    return None
+    return
   if divisor == 0:
-    logger.log(logging.ERROR, "Attempting to divide by 0!")
-    return None
+    logger.error("Attempting to divide by 0!")
+    return
   else:
-    return dividend/divisor
-
+      return dividend/divisor
 result = division()
-
 if result == None:
-  logger.info(logging.WARNING, "The result value is None!")
+  logger.warning("The result value is None!")
