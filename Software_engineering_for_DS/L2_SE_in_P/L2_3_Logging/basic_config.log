@@ -1,0 +1,4 @@
+[2025-04-11 16:12:25,901] INFO - 0.0
+[2025-04-11 16:12:26,733] INFO - 0.0
+[2025-04-11 16:12:26,733] ERROR - Attempting to divide by 0!
+[2025-04-11 16:12:26,733] WARNING - The result value is None!
