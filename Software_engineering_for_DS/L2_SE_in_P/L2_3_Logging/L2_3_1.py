@@ -1,6 +1,6 @@
-import logging
-import sys
+# Without logging
 
+import sys
 from datetime import datetime
 
 exchange_rates = {
