@@ -29,5 +29,6 @@ for location, staff in staff.items():
   try:
       print_staff_report(location, staff)
   # Write your code below:
-  except:
+  except ZeroDivisionError as e:
       print('Could not print sales report for ' + location)
+      print(e)
