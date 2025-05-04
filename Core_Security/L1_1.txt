@@ -1,1 +1,92 @@
 # Core security principles
+
+CIA Triad - 
+a) confidentiality - permitting authorised access
+    Categories:
+    - IP
+    - PII 
+    - PHI
+b) Integrity - evaluates ability of attacker's ability to manipulate data
+
+c) Availability - maintains timely and reliable access to services
+
+###
+
+Authentication - process of verifying or proving the identity of principal
+    Methods:
+    - something you know (PIN)
+    - sometihng you have (card)
+    - something you are (fingerprints)
+
+
+###
+
+Non-repudiation - signatory; 
+                - provides protection against falsely denying having performed a particular action  
+
+
+###
+
+Risk - measure of extent to which an entity is threatened by particular event 
+Information system-related security risks
+Total risks
+Residual risk - portion after control is applied
+Asset - needs protectionThreat - eventAgent - actor
+Vulnerability - weakness
+
+###
+
+Vulnerability - element of risk 
+
+Types of threats:
+    a) internal
+    b) external
+    c) structured
+    d) unstructured
+
+Agents - insiders, former emplees, AIs, intelligent agencies, competitors, criminals
+
+Impact - magnitude of harm
+
+###
+
+Ris assessment - process of identifying risks to operations
+    labeling and tagging
+    valuation
+    prioritising
+    classification
+    ownership
+
+RAR - risk assessment report
+
+Risk identification - finding, recognising and describing risks
+
+###
+
+Risk treatment - 
+    Acceptance - not to implement controls (ignoring)
+    Avoidance - deciding not to undertake actions 
+    Mitigation - implementation of controls (impact is reduced)
+    Transfer - passing off risk to 3rd party
+
+
+###
+
+Qualitative risk analysis - assessment as low, medium or high subject to judgement
+    Frameworks:
+    - COBIT5
+    - OCTAVE
+    - NIST RMF
+    - OWASP
+
+Qualitative heat map - likelyhood vs impact 
+
+###
+
+Quantitative risk analysis - scientific approach based on facts, estimators
+    Methods:
+    - classic Whitman method (asset value x exposure factor)
+
+
+###
+
