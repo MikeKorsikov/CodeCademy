@@ -1,2 +1,68 @@
 # Security governance, policies and controls
 
+Governance elements:
+- policies (offer guidance to assure that industry standards and regulations are supported)
+- procedures (detailed steps to complete a task)
+- standards (provide framework to introduce policies)
+- regulations (rules of order having the force of law)
+
+###
+
+Regulations and laws:
+GDPR - general data protection regulations (EU)
+PCI DSS - Payment card industry data security standard 
+HIPAA - health insurance portability and accountability act 
+
+###
+
+Standards:
+- for compliance
+- for advisories
+- for best practicies
+
+NIST - national institue of standards and technology
+ISO - international organisation for standardization
+CIS - center for internet security
+
+###
+
+Policies - statements that specify the correct or expected behavior of an entity
+
+Sections:
+- acceptable use (principles)
+- backup and restore
+- encryption
+- cloud usage
+
+###
+
+Procedures - describe repitable activities necessary to accomplish task
+
+Goals:
+- deliver consistent  results
+- reduce costs
+- enhance productivity
+- generate better environment
+
+###
+
+Code of ethics
+- protect society
+- act honorably
+- provide diligent service
+- advance and protect profession
+
+###
+
+Administrative controls - managerial or strategic, e.g NIST SP 800-53
+Technical controls - security mechanisms or tectical controls
+Physical controls - gates, locks, cameras, badges, sensors
+
+###
+
+Security control types:
+Preventative controls (stop atacker) - e.g. firewalls
+Detective controls (identify atack) - e.g.  alarm, alert, logs, SOAR system
+Deterrent control (discourage attacker) - e.g. warning, alarm, rotation of duties, audting
+Corrective controls (recovery control) - e.g. patching, terminating process, rebooting, 
+Compensating controls (result of audit) - e.g. dual operator 
