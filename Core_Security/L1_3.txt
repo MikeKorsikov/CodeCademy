@@ -1,1 +1,76 @@
 # Incident response
+
+### Terminology
+
+Breach - loss of control, compromise or unauthorised access
+Event - occurence or change of set of circumstances
+Incident - negative event
+Exploit - attack, taking advantage of vulnerability
+Intrusion - security event
+Threat - event with potential negative impact
+Vulnerability - known weakness
+Zero day - attack that exploits previously unknown weakness
+PUP - potentially unwanted program
+
+###
+
+Goal of incident response:
+- address violation
+- to be prepared
+- crisis management
+
+Incident response plan - set of instructions
+
+###
+
+Cycle:
+Phase 1 - preparation 
+(document incident types, roles, capabilities, requirements)
+(checklists, trainings, communication plans)
+
+Phase 2 - detection and analysis
+(monitoring in place - log, alert, calls, text)
+(raw data, categorize and prioritize incident)
+(escalation, CAB)
+
+Cyber kill chain:
+- recon
+- weaponization
+- delivery
+- exploitation
+- installation
+- command and control
+- exfiltration
+
+Phase 3 - Containment 
+(eradicate virus, report finding)
+
+Phase 4 - post-incident activities
+(track hours, identify impact, conduct AAR, share knowledge)
+
+###
+
+Teams:
+CSIRT - computer security incident response team (reesteblish control)
+Generate plan
+Investigate and analyze
+Manage communication
+Remediate incident
+
+###
+
+Forensics and problem management:
+1. Identification and preparation
+2. Seacrching and seizure
+3. Preservation (secure evidence)
+4. Examination (recover data)
+5. Analysis (drow conclusions)
+6. Reporting
+
+Order of volatility:
+- CPU
+- Kernel, swap space
+- Memory
+- temporary file system
+- removable disk
+
