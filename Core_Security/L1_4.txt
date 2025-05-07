@@ -1,1 +1,102 @@
 # Business Continuity Planning
+
+Business continuity - maintain operations
+
+Goals:
+- establish operations when negative event occures
+- ensure business operates
+- populate risk register
+- identify procedures to recover from disaster
+
+###
+
+RCP components:
+1) IRT - incident response team
+2) BIA - business impact analysis
+3) DRP - 
+4) BU/R - backup and restore
+
+NIST BCP:
+- develop coninuity planning policy statement
+- conduct business impact analysis
+- identify preventive controls
+- create contingency strategies
+- develop information system contingency plan
+- ensure plan testing, training and exercise
+- after action report
+- ensure plan maintenace 
+
+other components:
+- list of BCP team members
+- checklist of procedures
+- notification systems
+
+###
+
+BIA - Business impact analysis
+
+- risk assessment aspect of BCP
+- identify critical functions
+- identify metrics
+
+RPO - recovery point objective (point, relative to disaster, where recovery process begins)
+Based on:
+- database logs
+- snapshots
+- last known good configuration
+- recovery volume
+
+RTO - recovery time objective (time avaialbel to recover resource, service and function)
+MTD - maximum tolerable downtime
+MTBF - mean time between failure (the longer the better)
+MTTR - mean time to repair (the shorter the better)
+
+###
+
+Backup and restore policies
+1) Full backup - everything, takes long
+2) Incremental backup - any new file or changed file (store changes), quick
+3) Differential backup - slow to backup, quick to restore
+4) Snapshot - virtual copy/image, replicated to cloud (virtual copy)
+
+###
+
+Distater recovery:
+- ensure you can help org to recover to an acceptable level from any type of negative event
+- contain dtailed steps
+
+DR Cycle: detection > response > mitigation > remediation > reporting > LL
+
+###
+
+DRP components:
+- escalation procedures
+- technical aspects involved
+- order of restoration
+- backups 
+- contacts
+- communication plan
+- chain of authority and delegates
+- stepby-step instructions
+- recovery sites
+- location of assets (keys, licenses, software)
+
+Sites:
+HOT - best recover time (expensive) (RT 24-48 hours)
+WARM - moderate (RT 24-48 hours)
+MOBILE - moderate (RT 24-48 hours)
+COLD - low cost ((RT 72+ hours)
+RECIPROCAL agreement - cheap (RT 12-48)
+CLOUD - (RT 0-24 hours)
+
+###
+
+Plan testing:
+- read through (checklist) > look for missing elements
+- tabletop (team in the room) > gap analysis
+- walk-through (active drill for department) > scheduled
+- simulation (send teams to site)
+- parallel (bring recovery site to state of operational readiness)
+- full interruption (shut down ooperations) > expensive
+
+AAR - to document knowledge gained from exercise (LL)
