@@ -1,2 +1,96 @@
-# Phisical access controls
+# Physical access controls
 
+Access control concepts:
+- implemented to allow and restrict access to objects
+- process of granting or denying requests
+
+Elements:
+- subjects (people, hardware) > joiners, movers, leavers
+- [resource] objects (files, tables, programs)
+- roles (owners, custodians, stewards, processors, officers)
+- rules (instructions permit or deny access)
+
+###
+
+Defence in Depth pronciples:
+> layered defence
+> applied to physical security and technical controls
+> involve end-to-end security
+> assets > admin controls > logical and technical controls > physical controls
+
+###
+
+PAM - privileged access management , helps protect against threat actors by monitoring, detecting and mitigating unauthorised access to critical resources
+(blend of tools and processes)
+
+1. Local admin accounts
+2. superuser (sudo)
+3. Emergency accounts
+4. service accounts
+5. Application accounts
+6. Guest accounts
+7. Shared accounts
+8. Cloud IAM accounts
+
+PIM - privileged identity management
+
+###
+
+SoD - Segregation of duties 
+Pricniple - No user should control entire lifecycle of a system or transaction
+
+Two-person integrity:
+- require presence of two authorised personel
+
+###
+
+Badge system and gate entry
+- mechanism to detect, monitor, deter and prevent direct contact with object, facility
+
+Types:
+- bar code
+- QR code
+- magnetic stripe
+- proximity card
+- smart card
+- hybrid
+
+Endpoint physical security:
+- cables and locks
+- disable ports
+- smart cards and tokens
+- locking drawers
+- restricted switch ports
+- airgaps (certificates)
+- geotagging
+
+###
+
+Environmental controls design
+- environment needs monitoring
+- ingress and egress access points
+
+CPTED - crime prevention through environmental design
+
+###
+
+Biometrics
+1. Fingerprints - most common (integrated into mobile and laptop)
+2.  Facial - fastest (principal component analysis)
+3. Iris - front portion of eye
+4. Retinal scanning - back portion of eye
+5. Voice recognition - 
+6. Vein pattern
+
+FAR - False Acceptance Rate - ratio of of false acceptances / number of attempts
+FRR - Falses Rejection Rate -incorrectly rejects
+CER - crossover error rate -  where FRR == FAR
+
+###
+
+Monitoring systems:
+a. Cameras - combined with recording, lighting and alerts
+b. Guards - provide rapid response 
+c. Sensors - photoelectric, passive infrared, vibration, acoustical, microwave, eleterostatic, moisture
+d. Alarms - light, bell, text
+e. Rebot setries
