@@ -1,1 +1,79 @@
 # Logical access controls
+
+- intengible methods to limit access to sytems and data
+
+AUP - acceptable use policies (e.g. no credential sharing)
+
+###
+
+Defense in Depth Elements:
+- administrative controls
+- antimalware
+- behavioral analysis
+
+Layers:
+- MFA
+- IDS/IPS (intrusion detection and prevention systems)
+- endpoint detection and response
+- network segmentation
+- encyption of data at rest and in transit
+- DLP (data loss prevention)
+- SDP (software-defined perimeters)
+- VPN
+
+
+###
+
+DAC - discretionary access control
+Restricts access to data and systems based on identity of user and group membership
+
+Owner of resource can share or change permissions
+DAC Model example - MS Active Directory, UNIX File Permissions
+
+###
+
+MAC - mandatory access control
+- assign labels
+- compare labels to level of users
+
+Subject - granted access to info and constrained from passing or granting access to others
+
+Pros:
+- zero trust
+- access to what is need to know
+- scope creep is minimised
+
+Cons:
+- admin overhead
+- not suitable cross-functional orgs
+
+###
+
+RBAC - role based access control
+- based on charts, teams, roles, locations
+- determined by security administrators
+- built into RDB
+
+Pros:
+- out of the box
+- small and mid orgs
+
+Cons:
+- role expansion gets out of control
+- must be audited vigorously
+
+###
+
+RuBAC - rule based access controls
+- according to set of permissions, based on criteria predefined
+- common for infra devices (access from 9 till 17)
+- console based
+
+###
+
+ABAC - attribute based access controls
+- based on evaluation of attributes
+- subject, object, environment attributes
+- zero trust environment
+
+
