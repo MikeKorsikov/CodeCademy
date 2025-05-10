@@ -1,2 +1,123 @@
 # Network and security infrastructure
 
+Types and devices:
+a) Internet (public)
+b) Intranet (private)
+c) Extranet (business)
+
+Topologies:
+- backbone
+- central hub
+- ring
+- mesh
+- tree
+- point to point
+
+PAN - personal 
+LAN - local
+CAN - campus
+WAN - wide
+MAN - metro or municipal
+
+Network Hub - layer 1 devices (forward packets of information)
+Network Switch - manages physical networks
+WAP (wireless access point) - allows to form networks
+Multilayer switches - provide operational layers of the OSI model
+Router (gateway) - connect networks, manages traffic, forward packets to IP addresses
+Endpoint - connects hubs, switches and access points, devices that connect to networks
+
+Types of endpoints:
+- personal computers
+- servers
+- pads 
+- cll phones
+- smart TV
+- VMs
+
+Servers - central repo for data and programs shared by users
+Firewalls - 
+Netxt-gen firewall - inspection, security, prevention, VPN, active defense
+
+###
+
+Device Adressing Mechanisms
+
+IP network device - MAC address (48 bit, 12 digit hexadecimal number), assigned to device
+IPv4 - 32-bit number, uniquely identifies network interface on a machine
+IPv6 - 128-bit value identifies endpoint device
+
+###
+
+Small Business Network
+business: Internet > Firewall > Router > Switch > Servers or/and PC 
+home: Internet > ISP modem > Firewall > Router > Wireless App > Laptop
+
+###
+
+ISO/OSI Reference model:
+7 Application (HTTP, FTP, DNS, SMTP)
+6 Presentation (ASCII, PNG, AVI, MPEG)
+5 Session (SSL, SQL, NFS)
+4 Transport (TCP, UDP, SPX)
+3 Network (IP, IPX, ICMP)
+2 Link (PPP/SLIP, Ethernet, ATM)
+1 Physical (binary transmission)
+
+TCP/IP reference model:
+Application < Transport < Internet < Network  
+
+###
+
+Logical ports
+- used to identify host on a network
+
+FTP - 20 and 21
+SSH - 22
+Telnet - 23
+SMTP - 25
+DNS - 53
+HTTP - 80
+POP3 - 110
+SSL/TLS - 443
+
+UDP ports:
+FTP - 21
+DNS - 53
+NTP - 123
+Authentication service - 113
+
+###
+
+TCP Hanshake - used to set up connection over IP-based network
+Client > Server (SENT - RECEIVED)
+Cleint < Server  (Established - Established)
+
+###
+
+TLS - transport layer security [protocol]
+- replaced SSL
+- encrypting communication between applications (browsers, apps, servers)
+- protects VoIP, LDAP, POP3, HTTP
+
+###
+
+IP security:
+- collection of protocols 
+- encrypts connection between devices on the internet 
+- native to IPv6
+- Host A > Routeer A > Router B > Host b
+
+###
+
+Virtual LAN- logical subnet of devices 
+Router > Shared hub > LAN > PC 
+
+###
+
+Wi-Fi - networking protocol to communicate wthout cable connection
+- 802.11 IEEE
+
+WPA2 (wifi protected access) - network security suite
+WPA3 - require use of PMF (protected management frames)
+
+###
