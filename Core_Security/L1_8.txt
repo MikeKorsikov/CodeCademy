@@ -1,1 +1,95 @@
 # Present Threats & Network Security Controls
+
+APT - advanced persistent Threats (playing the "long game" untill successful)
+
+Spoofing - faking sending address, IP address, DNS
+Phishing - disguised email to trick 
+Vishing - voice phishing 
+Smishing - SMS phishing
+
+DoS - denial of service (overwelm server)
+a) Buffer overflow - make machine consume all CPU or memory 
+b) Flooding attack - high number of packets
+
+DDoS - distributed denial of service
+
+Virus - attached to exe or runtime code
+Worms - distribute copies of themselves
+Trojans - code that masquerade as legitimate application
+
+On-path attack - attacker is in the middle between client and server
+Ransomware - form of crypto malware
+
+###
+
+Threat prevention tools:
+Antimalware/antivirus - 
+Firewall - 
+IPS (intrusion protection system) - internet > firewall > IPS > server
+IDS (intrustion detection system) - 
+SIEM Systems - centralise the storage and analysis of logs (e.g. Splunk)
+
+###
+
+Threat Prevention Methodologies
+- know what you have
+- have robust patch management initiative 
+- disable unnecessary service ports
+- use endpoint protection- implement security principles (zero trust, SoD etc)
+
+Vulnerability scanning - process to identify weakness in Systems
+Vulnerability scanners - Burp Suite and OWASP ZAP
+
+Compliance scanning - if system compliant with policies and requirments 
+
+###
+
+Data center security:
+HVAC/Environmnetal controls (temperature 72-76, humidity 40-60)
+Fire safety (smoke sensors, suppression)
+
+###
+
+Cloud computing and Security 
+IaaS - where capability provided to consumer is to provision:
+        a) processing, 
+        b) storage, 
+        c) networks and 
+        d) other fundamental resources
+
+PaaS - to deploy onto the cloud infrastructure:
+        a) consumer created applications and 
+        b) tools supported by the provider
+
+SaaS - to use provider's application running on a cloud infrastructure through interface
+
+Types of cloud:
+> Public - owned by provider
+> Private - dedicated to single customer
+> Community - shared between similar (e.g. government agencies)
+> Hybrid cloud - combination
+
+CASB - cloud access security broker (software or hardware)
+
+###
+
+Secure Network Design
+> Zoning - zone has separate networks
+> VLAN - to partition network (groups a set of devices into different broadcast domains)
+> DMZ - demilitarized zone (perimeter network that allows to access untrusted networks)
+> Honeypot/net - decoy network (looks like real network but hosted on one server)
+
+###
+
+Zero Trust Initiatives:
+- least privileged
+- SoD
+- attribute based access
+
+###
+
+Micro-segmentation
+- divides a network into fine-grained, isolated segments 
+- to control traffic between workloads, containers, and other endpoints
+- limit traffic based on principles of least privilege 
+- to reduce the attack surface
