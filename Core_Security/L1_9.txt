@@ -1,1 +1,111 @@
 # Data Security & System Hardening
+
+Data lifecycle:
+1. Create (generated) > data owner identified
+    - discover, categorise, classify, map
+2. Store 
+3. Use
+4. Share
+5. Archive
+6. Destroy
+
+###
+
+Store
+- protection at rest
+
+###
+
+Use
+- by people, apps, tools
+- changed from original state
+- data becomes information
+
+###
+
+Share
+- visible, analysed by users
+- IAM should be used
+
+###
+
+Archive
+- stored for long term
+- removed from active used
+- archiving is automated
+- aspects (location)
+
+###
+
+Destroy
+- no longer accessable or usable
+- custodians have own disposal methods
+
+###
+
+Logging and monitoring security events
+
+Syslog:
+- protocol defined in RFC5424
+- sends system info or event messages to a designated server or SIEM system
+- used to gather device logs in a centralised fashion
+- uses dedicated ports
+
+Levels: emergency, alert, critical, error, warning, notice, info, debug
+
+SIEM:
+- combination of security event management and info management
+
+Capabilities:
+- collect logs
+- log analysis
+- IT compliance
+- App log monitoring
+
+SOAR:
+- security orchestration automation and response
+- involves performing security related tasks without human intervention
+- can be defensive detection, response, remediation or offensive 
+
+###
+
+Cipher - algorithm used for encryption
+
+Symmetric key cryptosystem:
+- the same key for encrypt and decrypt
+- efficient, fast, high throughput, inexpensive
+- hash (40 to 512 bits)
+- AES-CBC-128
+
+Asymetric Key Cryptosystem:
+- pair of public and private keys
+- slower, longer
+- great for signatures
+- RSA, ECDSA, ECDH
+
+Hashing:
+- converts data into fixed length string 
+- 128 to 512 bits- used in authentication
+- SHA1, SHA256
+
+Digital signature:
+- mechanism for authenticity
+- random private/public key pair
+- RSA, DSA
+
+###
+
+System Hardening:
+- eliminate means of attack by patching vulnerabilities
+- turning off nonessential services (ports)
+- applying updates, patches
+
+Configuration management:
+- identification
+- baseline
+- change control
+- verification and audit
+
+Patch management:
+- CMDB should be maintained
+- inventory > asessment > gap analysis > assess risk > apply tested patch
