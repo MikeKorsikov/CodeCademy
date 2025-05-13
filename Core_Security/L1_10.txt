@@ -1,0 +1,77 @@
+# Security Best Practices & Security Awareness
+
+Common Security Policies:
+
+a) Data Handling Policies:
+- identify restrictions
+- naming, labeling
+- data ownership
+
+- safe data in transit
+- define archive storage
+- stay aware of risks
+
+b) Password Policy:
+- governance towards access to data, apps, services
+- minimum length
+- pasword strength
+- other requirements (expiration date)
+
+c) Acceptable Use Policy:
+- agreement between parties outlining use of access to network
+- what users may and may not do on the network
+- used to protect from bad actors
+- data retention
+- removal device Policy
+
+d) Bring Your Own Device Policy:
+- personal to access enterprise data and systems
+
+e) Privacy Policy:
+- IP
+- PII
+- PHI
+
+###
+
+Configuration Management
+- process for deploying and maintaing systems
+- CMDB is a repository for CIs
+- CI item under configuration control
+
+###
+
+Change Management
+- change control Practices
+- CAB (change advisory board)
+
+- types:
+    1. Standard - no risk
+    2. Normal change - goes through CAB
+    3. Emergency change - bypass CAB to address risk
+
+Cycle: Submit > Approving > Documenting > Testing > Implementing > Reporting
+
+###
+
+Security Awareness 
+
+- trainings (new hires, movers, users in sensitive areas)
+- topics:
+    1. Org mission and vision
+    2. Applicable policies and procedures
+    3. Tailgating
+    4. Phishing
+    5. Clean desk
+
+- role based 
+- privileged users focused
+
+###
+
+Training life Cycle
+- Identify program
+- Motivate and get buy-in
+- Identify optimal modalities (online, onsite)
+- Administer
+- Evaluate and improve training (feedback)
