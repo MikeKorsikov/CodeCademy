@@ -1,0 +1,35 @@
+### Exam 1 (70.67%)
+
+1.
+Patch management - update server with new software version.
+Risk management - process of evaluating and managing risk.
+change management - integrating new or modifying existing process.
+
+2.
+Multifactor authenticationnnnn - more secure than single-factor, 
+                                 because requires multiple attacks to perform.
+
+3.
+CIA triad - cenfidetniality [permissions], 
+            integrity [accuracy], 
+            availability [accessibility].
+
+4. 
+Best practice for Privileged User Agreement (PUA):
+- privileged access shall be monitored
+- those who sign agreement, get access
+- privileged access can be used toperform assigned job duties
+- users must complete security awareness training
+
+5. 
+IaaS - provides reduced HW costs, 
+        allows selection of OS, 
+        enables execution of custom code,
+        provides network address assignment and management
+
+6. 
+Non-repudiation - security concept that proves a specific individual performed a task
+                - it prevents individual from claiming that they didnt perform a task
+
+
+7. 
