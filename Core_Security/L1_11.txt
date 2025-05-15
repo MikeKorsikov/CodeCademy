@@ -10,7 +10,7 @@ Multifactor authenticationnnnn - more secure than single-factor,
                                  because requires multiple attacks to perform.
 
 3.
-CIA triad - cenfidetniality [permissions], 
+CIA triad - confidetniality [permissions], 
             integrity [accuracy], 
             availability [accessibility].
 
@@ -33,3 +33,288 @@ Non-repudiation - security concept that proves a specific individual performed a
 
 
 7. 
+Incident response plan - protect assets [from being harmed]
+Disaster recovery plan - restore assets [after being harmed]
+
+8.
+Backup strategy > cloud solution > Concern? - Encryption of transfer and storage
+
+9. 
+Data handling policy - outlines restrictions around data (inlc sensitive employee data)
+Privacy policty - customer facing document (around data collection)
+Acceptable Use Policy (AUP) - outlines approved use of data
+Bring your own device policy - outlines approved use of devices when accessing corpo resources
+
+10.
+Separation of duties (SoD) - account created by one employee, configured by the other
+
+11.
+Motion detector - trigger alarm if unauthorised entry
+Tamper detection - to determine if altered without authorisation
+
+12.
+Detective control - finds indicators of security issues that are occuring
+Examples: CCTV, IR sensor
+
+13. 
+Mantrap - mechanism used to eliminate piggybacking and tailgating [includes two locked doorways]
+Turnstile gate - limit travel to one person at a security point
+Bollard - post to prevent traffic and cars from access
+
+14. 
+Continuous monitoring - recording all events that may be related to a violation
+
+15.
+To avoid being harmed by ransomware > have an offline backup.
+
+16.
+Confidentiality breach - where hacker got access to company trade secrets 
+
+17. 
+Dual control - requires employees to use two card readersto open the door.
+
+18.
+Confidentiality - control of information to prevent disclosure to unauthorised entities
+Privacy - relates to people and being in control of access to info about ourselves.
+
+19.
+Technical control - use SW and HW to restrict (firewall, encryption, MFA)
+Physical control - implemented in physical realm (locks, fences, CCTV, badges, bollards)
+Admin control - dictates how management uses oversight (risk assessment, performance review, background check)
+
+Preventative - stops issue BEFORE occuring 
+Deterrent - discourages humans from making issues
+Detective - finds indicators of security issues
+Corrective - reverts to a prior state
+Recovery - return to prior state
+Compensating - if primary control cant be used
+Directive - provides guidance to follow regarding isses
+
+20.
+Security policy - subject to government regulations, contractual obligations, and industry practice
+
+21. 
+Logical access control - method that limits access to system, asset, user account (e.g. password, badge, tokens)
+
+22.
+Threat agent - disgruntled employee or other person that can initiate or control attack
+
+23. 
+DHCP (dynamic host configuration protocol) - automatically configures hosts on network with IP configuration. DHCP info is leased to client for a limited time.
+SMTP (simple mail transfer protocol) - used to transfer mail over TCP/IP network.
+HTTP (hypertext transfer protocol) - used to transfer web pages over TCP/IP network.
+BOOTP - permanently assigns IP configuration to a client. 
+
+24.
+Incident steps:
+1 preparation
+2 detection
+3 notification
+4 containment (disconnect affected system, disable SW or HW, disconect internet)
+5 eradication (remove element from environment)
+6 recovery (new countermeasures applied)
+7 feedback
+
+25.
+Honeypot - computer used to entice an attacker, installed together with popular services and enabled port behind a firewall in DMZ.
+
+26.
+Data integrity - must be ensured during storage, processing and transit.
+
+27.
+Password requirements:
+- 12 charachters or longer
+- mix upper and lowwer case
+- one or more numbers
+- one or more special characters
+
+28.
+Principle of least privilege - users are assigned minimum access required to accomplish job responsibilities.
+
+29.
+OSI layers:
+7 Application 
+6 Presentation 
+5 Session (SSL on port 443)
+4 Transport (TCP and UDP protocols operate to deliver data)
+3 Network (defines IP address that helps to select route to destination)
+2 Data Link (defines MAC address, used in switching process)
+1 Physical 
+
+30.
+Minimize data loss > warning of impending harm (triggers backup or transfer)
+
+31. 
+Router - conects networks together
+Switch - connects computers together
+
+32.
+CCTV - detective security control mechanism for physical security
+
+33.
+Role-based access control (RBAC) - roles are created based on job function and assign permissions to role or group. Employees are added to groups based on job requirements.
+
+34.
+Authorisation - access control function that defines which subjects CAN perform various tasks on specific objects
+Authentication - verification that subject is claimed entity.
+
+35.
+CIA = Confidentiality + Integrity [accuracy] + Availability 
+
+36.
+Firewall - helps limit traffic from external connection
+VPN server - accepts connections from VPN clients over public network 
+
+37.
+Role-based Access Control (RBAC) - implemented by assigning job name label to subjects (employees)
+Access Control List (ACL) - used by DAC systems to define access on objects
+
+38.
+TCP ports:
+20 - FTP (files)
+22 - SSH (secure shell)
+53 - DNS (domain)
+67, 68 - DHCP (dynamic host configuration)
+80 - HTTP (web pages)
+110 - POP3
+119 - NNTP (news)
+123 - NTP (time)
+443 - SSL (security)
+3389 RDP (remote desktop)
+
+39.
+Deterrent - security control in Acceptable Use Policy (AUP) waring employees of consequences 
+
+40.
+Containment - incident response policy step to prevent further damage 
+
+41.
+Use of security badges - physical security method to limit access to assets
+
+42.
+Symmetric encyption - system based on ONE key performing BOTH encryption and decryption
+
+43.
+DDoS - attack involves the use of multiple computers with purpose of denying access to critical server [master > handler > slave > target]
+Ping of Death - flooding target with oversized packets
+DoS - flooding target system with unwanted requests
+
+44.
+Implicit deny - foundational security concept where nothing and none is allowed any form of default access, it halts access to all resources.
+
+45. 
+Avoidance - risk management strategy altering business task to work around a specific event in order to prevent compromise 
+Transference - places responsibility on someone else but NOT removing risk
+
+46.
+DRP - security plan to restore normal operations in the event of interruption of critical function
+AUP - acceptable use policy
+
+47.
+Mandatory Access Control (MAC) - determines which objects person (subject) can access through use of classification labels. Each object and subject have labels. On access attempt labels are compared.
+
+48.
+Revocation - event of certificate authority (CA) cancelling issued digital certificate
+
+49. 
+Incident response plan - identify roles and responses, train staff, identify critical data and systems.
+
+50.
+Secure password management:
+- use audit tools and test password strength
+- create long and complex passwords
+- never share passwords
+
+51.
+Fence - physical bareer (6-7ft) that acts as a first line of defence against intruder
+
+52.
+Digital signature - provides integrity, non-repudiation and authentication benefits
+
+53.
+Password policies:
+- minimum length
+- expiration period
+- must not be a single dictionary word
+
+54.
+Security awareness training should be provided to users that handle sensitive data.
+
+55.
+Code of Ethics canons:
+- protect society
+- act honorably
+- provide diligent service
+- advance and protect profession
+
+56.
+Net neutrality - key principle where all internet traffic treated equally by internet providers and government. Ensures all data, apps and services have equal access to network.
+
+57.
+NTP - network time protocol (allows to synchronize time on devices)
+HTTP - hypertext transfer protocol
+FTP - file transfer protocol
+SMTP - simple mail transfer protocol
+
+58.
+FTP - protocol for file transfer (local and remote)
+
+59.
+BCP - proactive development of procedures to restore business operations after disaster
+Backup and restore, site replication are part of BCP.
+
+60.
+DAC - subjects granted access to objects, have ability to grant it to others > use ACL
+MAC - only security admin grants subjects access to objects > use labels
+
+61.
+Physical (1) > data link > network > transport > session > presentation < application (7)
+
+62.
+Privacy - providing means of controlling the distribution of information about an individual
+
+63.
+Security procedure - document containing detailed steps for performance of specific task
+
+64.
+File transfer protocols - via SFTP and FTP
+
+65.
+Under MAC users do not have ability to grant permissions to other subjects.
+
+66.
+Anti-virus software - used to detect known examples of malware (has database on code samples)
+
+67.
+VPN - protects against eavesdropping and session hijecking, it uses digital certificates and encryption.
+
+68.
+Risk responses:
+Acceptance -assuming risk (not taking actions)
+Mitigation - taking preventive actions
+Avoidance - reduce risk by stopping certain activities
+Transference - move responsibility to others (insurance, outsource)
+
+69.
+When notice unethical act in the group - stop participating in the group (Code of Ethics)
+
+70.
+New security policy? - distribute a survey or quiz to epmployees to ensure compliance.
+
+71.
+Interception attack - where unapproved device (wireless adapter) connected to network and allows hijackers to compromise confidentiality of data being sent accross network
+Modification attack - changing content of files 
+
+72. 
+"Need to know" permission - means under Mandatory Access Control environment (granular approach to access).
+
+73.
+Web browser > DNS > TCP > port 80 > HTTP > Web server
+
+74.
+(OSI model layers)
+
+75.
+Acceptable Use Policy (AUP) - document employees will sign that outlines how they may use their company assigned laptops. Outlines how employees may use company assets.
+
+
