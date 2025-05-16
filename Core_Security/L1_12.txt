@@ -1,1 +1,192 @@
-# Test 2
+### Exam 2 (80%)
+
+1.
+DAC (discretionary access control) - high flexibility, based on object ACL, decentralized
+RBAC (role based access control) - moderate flexibility, based on labels, centralized
+MAC (mandatory access control) - low flexibility, based on labels, centrilized
+
+2.
+To assure file security [from malware] - check file signature and hash calculation.
+
+3.
+Regulations - state guidlines
+Policies - general internal document
+Procedures - detailed internal document
+Standards - reference models
+Baselines - performance statistics
+
+
+4.
+Retention period - affectdd by corporate governance, legal requirements and industry regulations
+
+5.
+TCP ports:
+20,21 - FTP (file)
+22 - SSH (secure shell)
+23 - Telnet
+25 - SMTP (mail)
+53 - DNS (domain)
+67,68 - DHCP (dynamic)
+80 - HTTP (network data transfer)
+110 - POP3 (post office)
+123 - NTP (time)
+161,162 SNMP (network)
+443 - SSL & HTTPS (security)
+3389 - RDP (remote)
+
+6.
+(TCP ports)
+
+7.
+Spoofing - impersonating legitimate user
+Injection - sending source code in web forms [where they don't belong]
+Phishing - atack via email
+Fragmenting - sending corrupt packets to server to generate errors (type of DoS)
+
+8.
+SFA (single factor authentication) - username and password, simple and weak
+
+9.
+Bollards - physical and preventative type of security 
+
+10.
+Social engineering attacks:
+Vishing - attack via phone call
+Whaling - attacking CEO or similar
+Phishing - attack via email
+Smishing - attack via sms
+
+11.
+Hardware/appliance firewall - stand-alonoe black box, plugged into network with minimal configuration
+Application firewall -integrated into another type pf firewall, to filter traffic at Application layer
+Embedded firewall - implemented as a component of switch or router
+
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+
+24.
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.
+
+31.
+
+32.
+
+33.
+
+34.
+
+35.
+
+36.
+
+37.
+
+38.
+
+39.
+
+40.
+
+41.
+
+42.
+
+43.
+
+44.
+
+45.
+
+46.
+
+47.
+
+48.
+
+49.
+
+50.
+
+51.
+
+52.
+
+53.
+
+54.
+
+55.
+
+56.
+
+57.
+
+58.
+
+59.
+
+60.
+
+61.
+
+62.
+
+63.
+
+64.
+
+65.
+
+66.
+
+67.
+
+68.
+
+69.
+
+70.
+
+71.
+
+72.
+
+73.
+
+74.
+
+75.
+
