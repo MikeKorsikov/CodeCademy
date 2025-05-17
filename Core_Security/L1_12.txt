@@ -2,8 +2,8 @@
 
 1.
 DAC (discretionary access control) - high flexibility, based on object ACL, decentralized
-RBAC (role based access control) - moderate flexibility, based on labels, centralized
-MAC (mandatory access control) - low flexibility, based on labels, centrilized
+RBAC (role based access control) - moderate flexibility, based on labels [to subjects], centralized
+MAC (mandatory access control) - low flexibility, based on labels [to objects], centrilized
 
 2.
 To assure file security [from malware] - check file signature and hash calculation.
@@ -23,7 +23,7 @@ Retention period - affectdd by corporate governance, legal requirements and indu
 TCP ports:
 20,21 - FTP (file)
 22 - SSH (secure shell)
-23 - Telnet
+23 - Telnet (unsecure command line)
 25 - SMTP (mail)
 53 - DNS (domain)
 67,68 - DHCP (dynamic)
@@ -61,132 +61,223 @@ Hardware/appliance firewall - stand-alonoe black box, plugged into network with 
 Application firewall -integrated into another type pf firewall, to filter traffic at Application layer
 Embedded firewall - implemented as a component of switch or router
 
-
 12.
+Impersonation - social engineering attack technique impersonating employee, staff, vendor
 
 13.
+Logical access control - broad category for controlling access to digital resources
+Physical access control - controls access to physical assets
 
 14.
+New policy? > distribute a survey or quiz to employees to validate understanding
 
 15.
+(TCP ports)
 
 16.
+Hashing - is used to detect integrity violations by comparing a before and after hash value.
 
 17.
+Continuous monitoring - to take notice of events of interest.
 
 18.
+Revieweing baseline - performed periodically to ensure that the normal trafic patterns and volume have not changed
 
 19.
+Firewall - helps to limit traffic from the unknown connections
 
 20.
+MAC (mandatory access control) - model based on OS designed for MAC environments. 
+Labels/categories are used. Only admin can change category of a subject or object.
 
 21.
+(TCP ports)
 
 22.
+Privacy - providing means of controlling the distribution of information about individual.
 
 23.
+Detective control - finds indicators of security issues that are occuring (IR sensor, CCTV)
 
 24.
+Logical accces control (LAC) - method that limits access to system, digital asset using password, bio sensor, badge, token, MFA 
 
 25.
+OSI:
+7 Application (provides services)
+6 Presentation (converts data into format acceeptable by app layer)
+5 Session (SSL on port 443)
+4 Transport (TCP and UDP protocols operate to deliver data; provide end-to-end communication services)
+3 Network (defines IP address that helps to select route to destination)
+2 Data Link (defines MAC address, used in switching process)
+1 Physical (HW sending and receiving data on a carrier)
 
 26.
+Motion detection - control which could trigger an alarm in the event of unauthorised entry
+Tamper detection - control to determine if sth has been altered (e.g. sea is broken)
 
 27.
+NTP (network time protocol) - synchronising time and date using port 123.
 
 28.
+DAC - allws subject to extend privileges to object to any new subject
 
 29.
+MFA - requires multiple distinct attacks to perform impersonation 
 
 30.
+RBAC - labels assigned to SUBJECTS (people, employees)
 
 31.
+Security tech training - provided to users that handle confidential or sensitive data
+
 
 32.
+(OSI model)
 
 33.
+Data integrity: processed > stored > transfered
 
 34.
+Recovery - phase of inciendet management where new countermeasures are implemented
 
 35.
+Logging - technical (!) control in the process of assessing compliance
+Auditing - management (!) control in the process of assessing compliance
 
 36.
+Virtual VLSN - allows networks to be segmented logically without having to be physically rewired
 
 37.
+--
 
 38.
+CoE tenant - act honorably
 
 39.
+FTP (20,21), SFTP (22) - used for file transfer
 
 40.
+Switch - advanced device, learns what computers are connected to individual ports and limit communication  to appropriate ports
+Hub - basic device, repeater, all mesagges are repeated to ALL ports, disged to transmit data on the same subnet
+Bridge - a device that separates network into distingct domains to control traffic
 
 41.
+Subject - entity requesting access to asset (object)
 
 42.
+Social engineering - type of attack that can't be blocked or resolved with software fix
 
 43.
+Policy - strategic, broad, high-level, establish boundaries
+Procedure - tactical, specific, detailed, outline step-by-step processes
 
 44.
+Procedure - set the steps to enforce the network owner's policies, including updating network drivers
 
 45.
+DoS attack - significant increase in network traffic (flood network with request)
 
 46.
+Malware - attack where malicious software is installed and does damage to a network.
 
 47.
+Selecting cryptography mechanism? > Bear in mind sesativity of data to be protected.
 
 48.
+US laws:
+HIPPA - health insurance portability and accountability act
+COPPA - children's online privacy protection act
+CON-SPAM - controlling the assault of non-solicited pornography and marketing
+DMCA - digital millennium copyright act
 
 49.
+Mitigation - taking actions in response to a threat to protect against future incidents
 
 50.
+BCP - triggered by security breach of an admin account
+DRP - triggered by natural disaster
 
 51.
+Detective security control - a pysical security, using security camera
 
 52.
+Dual control - requires two employees to use two card readers to open door or else.
 
 53.
+Digital signature - provides authentication, integrity, non-repudiation.
+Confidentiality - not provided by digital signature, encyption does.
 
 54.
+Containment - step in incident response, preventing further damage from known incident.
 
 55.
+Incident response plan:
+- train staff
+- identify critical assets 
+- identify roles and responsibilities 
 
 56.
+--
 
 57.
+IaaS - provides the highest level of security control (and additional maintenance responsibilities)
 
 58.
+Risk acceptance - assuming certain amount of risk and not taking action,
 
 59.
+Risk avoidance - altering a business task to work around a specific event in order to prevent compromise
 
 60.
+--
 
 61.
+Interception attack - where hackers are able to capture data from a network that is confidential (e.g. unapproved wi-fi adapter on network)
 
 62.
+Password security management:
+- never share password
+- create long and complex password
+- use audit tools and test password strength
 
 63.
+Firewall - network appliance that can filter traffic based on IP address and port number (logical control)
 
 64.
+Non-repudiation - sender can't deny sending message (through using digital signature)
 
 65.
+Privilege creep - result of an access control management process that adds capabilities to user as their job tasks change over time, 
+but does not regularly reassess authorisation.
 
 66.
+Signature-based IDS - relies upon a database that contains the identities of possible attacks.
 
 67.
+Data handling policy - document that outlines restrictions for use of company info.
+Privacy policy - customer faced document. 
 
 68.
+DAC into RBAC > create groups with names of jobs, assigns privileges to groups, add users to groups
 
 69.
+"Need to know" - means to provide more granual control over objects in MAC environment.
 
 70.
+Event - triggers incident response strategy.
 
 71.
+Endpoint device encryption - provides confidentiality to network.
 
 72.
+Password policy: 12 harcters, mix of capital and lower case, numbers, special characters 
 
 73.
+BCP and DRP must be tested > to discover deficiencies and assess sufficiency
 
 74.
+BYOD - policy that allows employees to use own equipment to interact with company resources 
 
 75.
-
+Confidentiality breach - where hacker gains access to company sensitive information (secrets)
