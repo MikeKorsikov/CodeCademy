@@ -1,6 +1,8 @@
-### Exam 3 ( %)
+### Exam 3 (89.33%)
 
 1.
+Bandwidth throttling - limitting amount of network traffic (traffic management)  
+Load balancing - distributing the workload across elements (e.g. servers)
 
 2.
 
@@ -42,10 +44,15 @@
 20.
 
 21.
+Firewall - equipment that creates DMZ (contains publicly available server)
 
 22.
 
 23.
+Authentication methods:
+- something you are (fingerprint)
+- something you have (smart card)
+- something you know (password)
 
 24.
 
@@ -60,6 +67,7 @@
 29.
 
 30.
+Injection attack - where hacker sending executable code to web server throught forms on web app
 
 31.
 
@@ -74,24 +82,30 @@
 36.
 
 37.
+Technical (logical) secuirty control - implementing security HW appliance
 
 38.
+Rootkit - malware that embeds itself deeply into system in order to hide
 
 39.
+SSO - technology that enables user to authenticate to a company network from assigned workstation through private network
 
 40.
 
 41.
 
 42.
+Most common authentication - user ID and password.
 
 43.
 
 44.
 
 45.
+RBAC - easy to implement and has low cost (not user friendly).
 
 46.
+Transport layer (4) > UDP and TCP
 
 47.
 
@@ -112,34 +126,48 @@
 55.
 
 56.
+Logical Access Control - example: fingerprint reader connected to a laptop that is used for login
 
 57.
 
 58.
+System hardening - remove what is unnecessary, lock down whatever remains (to minimise attack surface)
 
 59.
 
 60.
 
 61.
+DRP - security plan use dto restore normal operations in the event of FULL interruption of mission -critical business functions
 
 62.
+OSI:
+7 Application (provides services such as e-mail or FTP)
+6 Presentation (converts data into format acceeptable by app layer)
+5 Session (SSL on port 443)
+4 Transport (responsibvle for error-free DELIVERY of data)
+3 Network (is responsible for making PATH and forwarding decisions)
+2 Data Link (defines MAC address, used in switching process)
+1 Physical (consists of HW for sending and receiving data on a carrier)
 
 63.
 
 64.
 
 65.
+Digital certificate - form of trusted third-party (CA) authentication, using asymmetric cryptography.
 
 66.
 
 67.
+Integrity enforcement - comparing a baseline of HW settings and SW configuration against a live system.
 
 68.
 
 69.
 
 70.
+HTTP - unsecure protocol for web browser for exchaning files
 
 71.
 
@@ -150,4 +178,5 @@
 74.
 
 75.
-
+BCP purpose - maintain ability to perform mission-critical work tasks while dealing with harmful events (not fully interrupted)
+DRP purpose - restore mission critical TASKS (not currently operating)
