@@ -1,7 +1,152 @@
-prep for test 4 (%)
+### Exam 4 (94.67%)
+
+1.
+
+2.
+
+
+3.
+
+4.
+BCP - proactive development of procedures to restore business operations after 
+      disaster or other significant disruption
+
+5.
+
+6.
+
+7.
+Firewall - device that uses security policy to filter and examine packets
+           coming into network to determine whether to forward to its destination.
+
+8.
+Switch - conects multiple computers on a single network AND intelligently routes traffic
+Hub - connects multiple computers on a single network BUT does not intelligently route traffic
+
+9.
+IPS (intrussion preventive system) - detects network attempts and controls access to network
+IDS (intrusion detective system) - detects intrusion, logs it and notifies personnel
+
+10.
+
+11.
+DMZ is used for:
+- hosting email servers
+- hosting public-faced web servers
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+Disaster recovery - example: redirecting organisation to backup internet provider
+
+24.
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.
+
+31.
+
+32.
+
+33.
+
+34.
+
+35.
+Event data analysis - interprets collected events and take appropriate action 
+
+36.
+
+37.
+
+38.
+Logging - technical (!) control used in the process of assessing compliance
+
+39.
+IPSec - encryption protocol for IPv4, used for data transmission protection 
+
+40.
+
+41.
+
+42.
+
+43.
+
+44.
+Fragment attack - [type of DoS] sending fragmented [corrupt] packets 
+                  to a [web] server in order to generate errros
+Injection attack - sending source code or SQL in web forms where they don't belong
+
+45.
+
+46.
+
+47.
+
+48.
+
+49.
+Firewall - equipment to create DMZ
+Active hub - circuitry that allows signal regeneration
+Passive hub - connects devices in a star topology (no sygnal regeneration)
+
+50.
+
+51.
+
+52.
+
+53.
+
+54.
+
+55.
+
+56.
+
+57.
+
+58.
+
+59.
+
+60.
+
 61.
 
 62.
+Reformatting - process of erasing data from disk/tape by manipulating media's magnetism
+Degaussing - process of using strong magnetic fields to destroy data on disk/tape/HD
 
 63.
 
@@ -16,6 +161,7 @@ prep for test 4 (%)
 68.
 
 69.
+Least privillege - example: usse RUN command to execute admin task during regular user session
 
 70.
 
@@ -28,3 +174,4 @@ prep for test 4 (%)
 74.
 
 75.
+RBAC - used by administrators to set up permissions based on job requirements
