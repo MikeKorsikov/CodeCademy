@@ -10,6 +10,7 @@
 4.
 
 5.
+Network < router
 
 6.
 
@@ -44,6 +45,7 @@
 21.
 
 22.
+Order: identification [username] > authentication [MFA] > authorisation
 
 23.
 
@@ -64,6 +66,10 @@
 31.
 
 32.
+Retention period is affected by:
+- legal requirements
+- industry regulations
+- corporate governance
 
 33.
 
@@ -84,10 +90,13 @@
 41.
 
 42.
+SLA - crafted and reviewed to ensure that a cloud provides necessary level of service and security demanded 
+(legally enforceable)
 
 43.
 
 44.
+To set privileges on the object - grant user full control over the object.
 
 45.
 
@@ -96,6 +105,8 @@
 47.
 
 48.
+Authorisation policy - determines attributes of subjects and objects
+                        that determines if access is granted or denied
 
 49.
 
@@ -104,14 +115,21 @@
 51.
 
 52.
+FTP - 20
+Telnet - 23
+SMTP - 25
+DNS - 53
+HTTP - 80
 
 53.
+Impact of threat - needed to determine priority of implementing risk treatment
 
 54.
 
 55.
 
 56.
+Risk after ransomware - that original risk may still exist
 
 57.
 
@@ -120,6 +138,7 @@
 59.
 
 60.
+AUP - defines how users are allowed to employ company hardware
 
 61.
 
@@ -142,11 +161,14 @@
 70.
 
 71.
+OSI
 
 72.
 
 73.
 
 74.
+Mitigate risk - take actions in response to threat
+Transfer risk - enlisting a third party (!) to be responsible for this risk
 
 75.
