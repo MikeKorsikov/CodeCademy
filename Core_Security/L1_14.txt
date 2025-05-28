@@ -145,7 +145,6 @@ Passive hub - connects devices in a star topology (no sygnal regeneration)
 61.
 
 62.
-Reformatting - process of erasing data from disk/tape by manipulating media's magnetism
 Degaussing - process of using strong magnetic fields to destroy data on disk/tape/HD
 
 63.
