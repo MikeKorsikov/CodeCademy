@@ -1,11 +1,11 @@
-### Exam 6 (%)
+### Exam 6 (96%)
 
 1.
 
 2.
 
-
 3.
+Degaussing - process of using magnetic field to detroy the data stored on disk or tapes
 
 4.
 
@@ -19,22 +19,27 @@
 8.
 
 9.
+AUP (acceptable use policy) - has penalty for non compliance (deterrent and managerial control)
 
 10.
 
 11.
 
 12.
+Security guard - the most expensive measure to reduce physical risk.
 
 13.
 
 14.
 
 15.
+Switch (smanrt) and hub (not smart) - are used to connect multiple users to a single network
 
 16.
 
 17.
+RBAC - easy to implement and low cost
+     - not user friendly, not secure, not discretionary 
 
 18.
 
@@ -55,6 +60,7 @@
 26.
 
 27.
+IPSec - used for data transmission protection
 
 28.
 
@@ -82,6 +88,8 @@
 39.
 
 40.
+Fault tolerance - ability to respond to a single point of failure on a network.
+It refers to making sure that devices are safe from problem that might occur with them.
 
 41.
 
@@ -108,12 +116,16 @@
 
 52.
 
-
 53.
+MAC - NOT based on user decision
+RBAC - NOT based on user decision
+DAC - based on user decision
 
 54.
 
 55.
+Incident response plan - focused on protecting assets from being harmed
+Disaster recovery plan - focused on restoring asets after being harmed
 
 56.
 
@@ -124,6 +136,7 @@
 59.
 
 60.
+Security badge - provides physical security for a network (limits access)
 
 61.
 
@@ -132,6 +145,7 @@
 63.
 
 64.
+Netwrok (3 level) - defines IP address that helps in selecting routet to the destination
 
 65.
 
@@ -151,6 +165,7 @@ OSI
 72.
 
 73.
+IaaS - provides highest level of security control and additional maintenance responsibilities
 
 74.
 
