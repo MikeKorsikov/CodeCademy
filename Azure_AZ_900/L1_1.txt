@@ -1,1 +1,42 @@
 # Azure Fundamentals
+
+Cloud computing - metered self-provisioned IT services accessable over a netwrok
+
+Characteristics:
+- resource pooling 
+- broad access
+- rapid elasticity
+- on-demand self-service
+- metered usage
+
+###
+CSP - cloud service provider
+
+Resource pooling - CSP equipment available for cloud tenants
+Resources appear infinite.
+
+Broad access - accessable over private or public network.
+Support for any type of device.
+
+Rapid elasticity - easily add/remove/resize storage, VM
+
+On-demand self-service - user deploys and managers resources
+CSP technicians are not involved.
+Control provided to tenants.
+
+Metered usage - usage tracked by the CSP.
+Charges based on service usage and storage.
+
+### 
+
+Virtualisation 
+- operating system virtualisation requires hypervisor.
+
+Type 1 hypervisor - dedicated, it is an OS, runs on HW
+Type 2 hypervisor - runs as an app, good for testing, developing but not PROD
+App virtualisation
+App containers
+Virtual desktop infrastructure (VDI or AVD)
+Software-defined networking (SDN)
+
+VM Sprawl - easy provisioning of VM but easy to forget about unused VMs
