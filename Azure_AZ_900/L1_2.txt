@@ -1,0 +1,57 @@
+# 
+PaaS:
+- underlying infrastructure required to support IT services is automatically provisioned
+- provisioning done by CSP
+- managed service (serverless)
+
+Responsibilities:
+CSP - underlying infra, VMs, SW, patching 
+Tenant - configuration of solution, data
+
+Examplese:
+a) Azure AD / Entra ID (centralised cloud authentication)
+- no network configuration
+- no servers to deploy
+- no Group Policy
+
+b) Azure SQL Database
+- no network configuration
+- no servers to deploy
+- no database software to install
+
+c) Azure Virtual desktop
+- select a bundle (HW and SW)
+
+###
+
+Managed via:
+- GUI (graphical user interface) / Azure Portal
+- CLI (command-line interface)
+- Azure PowerShell
+- Programmatic API calls
+- Templates
+
+###
+SaaS:
+- managed cloud service
+- end-user applications
+- software is managed by CSP 
+- limited config options
+- isolated from other cloud tenants
+
+Responsibilities:
+CSP - support infra, SW maintenance/patching, tenant isolation
+Tenant - usage, data privacy
+
+Benefits:
+- accessable anywhere
+- no software deployment (browser based)
+- pay per use 
+
+Examples:
+- MS365
+- Web applications
+
+###
+
+ADC - azure data centers

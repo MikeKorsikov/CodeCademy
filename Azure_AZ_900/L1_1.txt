@@ -43,3 +43,43 @@ VM Sprawl - easy provisioning of VM but easy to forget about unused VMs
 
 ###
 
+Cloud deployment models:
+a) Public cloud - available to anybody over the internet (CP owns infrastructure)
+b) Private cloud - owned and used by single org, full config control
+c) Hybrid cloud - full config control but leverage public cloud
+d) Community cloud - tailored for specific needs of government organisations
+
+###
+
+ADC - azure dta center
+Locations not disclosed
+
+AZ - availability zone
+Has 1 or more ADC
+
+IaaS cloud service model
+- storage
+- network addressing and routing
+- network security
+- computer services (VMs, containers)
+
+Responsibilities:
+CSP - hypervision, network equipment, physical storage  
+Tenant: VM deployment and management (patching), VNets, storage provisioning 
+
+Examples:
+- storage accounts
+- virtual machines
+- virtual networks
+- azure firewall
+
+Benefits:
+- quicker than on prem provisioning 
+- accessible from anywhere
+
+Managed via:
+- GUI (graphical user interface) / Azure Portal
+- CLI (command-line interface)
+- Azure PowerShell
+- API 
+- Templates
