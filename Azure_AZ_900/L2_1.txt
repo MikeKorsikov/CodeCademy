@@ -1,1 +1,57 @@
-# Access
+# Azure Management Tools
+
+Azure Portal - web GUI interface to manage Azure services
+portal.azure.com
+
+Allows access to:
+Bash (black)
+PowerShell (blue)
+
+###
+
+Azure CLI (command line interface)
+- used to manage services 
+- requires syntax knowledge
+- could be installed OR
+- could be accessed through Azure Portal
+
+Authentication:
+- From Portal > no need
+- From installed > there is a login required
+
+to call for help:
+C:\>az vm --help | more
+
+To create VM:
+az vm create \ ...[specify configurations]
+
+Installing CLI:
+- download from microsoft.com
+- 32 or 64-bit
+- use command Prompt
+- C:\>az login (takes to web portal to enter credentials)
+
+###
+
+Azure PowerShell Az Module:
+- collection of related cmdlets
+- accessable through azure Portal OR
+- accessable via install on-prem 
+- used to automate cloud management
+
+to call for help:
+> Get-Command *azvm* -Module Az.Compute | more
+
+To create VM:
+$creds=Get-Credentials
+New-AzVm ...[specify configurations]
+
+Installing locally:
+[via PowerShell]
+> Set-Execution Policy ...
+> Install-Module -Name Az ...
+> connect-azaccount (prompt for web login)
+> get-aztenant (shows list)
+
+###
+
