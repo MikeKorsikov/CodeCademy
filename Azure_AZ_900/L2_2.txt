@@ -1,0 +1,26 @@
+# 
+ARM - Azure Resource Manager
+
+ARM Templates: 
+- text files containing instructions for deployming and configuring resources
+- structured JSON file (containing list of instructions)
+- infrastructure as a code
+
+Syntax:
+"parameters":
+{"resource":"my_resource",
+"location": "Canada",
+"properties":{...}
+}
+
+To access:
+- Download template from Azure portal OR
+- Use Azure Portal Template Editor
+
+Deployment:
+- via Azure portal (custom deployment)
+  [Home > Create a resource > Marketplace > Template deployment > Custom deployment]
+- via CLI
+- via PowerShell
+
+Managing ARM templates using Visual Studio:
