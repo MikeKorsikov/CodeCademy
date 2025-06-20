@@ -55,3 +55,20 @@ Examples:
 ###
 
 ADC - azure data centers
+TCO - total cost of ownership
+
+###
+
+Azure regions:
+- one or more availability zone
+- geographical location where Microsoft has a cloud presence (one or more DC)
+- more than 60 worldwide
+- service availability can vary
+
+AAZ (Azure Availability Zone):
+- within Azure region
+- services can be replicated between zones
+
+ASR (Azure Sovereign Region):
+- type of community cloud
+- isolated from other cloud
