@@ -1,0 +1,31 @@
+# Azure Arc
+- used to manage IT resources across platforms, clouds and DCs
+
+Benefits:
+- centralised compliance (Azure Policy)
+- centralised server configuration
+- supports external resources (AWS, GCP)
+- unified management
+
+Accessed via:
+- Azure portal
+- Azure CLI
+
+To enable:
+- agent must be installed on server
+- server is assigned resource ID
+- server is assigned a managed identity
+
+###
+
+TEST 1:
+
+1 Private cloud - underlying hardware infrastructure the responsibility of a private organization
+2 Type 2 hypervisor - virtualization app on your administrative laptop
+3 IaaS services - storage accounts, VMs
+4 PaaS services - Azure SQL DB, AVD
+5 AAZ1 + AAZ2 = ARegion
+6 Azure Connected Machine agent > server assigned resource ID > server is placed in Azure resource group
+7 SaaS service - Microsoft 365
+8 To ensureon prem data availability - enable data replication to cloud
+9 Rapid elasticity - related to autoscaling
