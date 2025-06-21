@@ -23,4 +23,25 @@ Deployment:
 - via CLI
 - via PowerShell
 
-Managing ARM templates using Visual Studio:
+###
+
+You can manage ARM templates using:
+- Azure portal Home>Create a resource > Marketplace > Template deployment >
+- CLI
+- PowerShell
+- Visual Studio
+
+###
+
+Test:
+1 Resource group - type of Azure object organizes related cloud objects
+2 az - prefix command used with Azure CLI commands
+3 az login - CLI command to authenticate with Azure subscription
+4 Storage account - prompted to be created when Shell launched for the first time
+5 Connect-AzAccount - PowerShell cmdlet used to authenticate user subscription
+6 JSON - syntax used for ARM templates
+7 ps1 - file extension for a PowerShell script
+8 New-AzResourceGroupDeployment - PowerShell cmdlet to deploy ARM template for project associated resource
+9 az deployment group create --resource-group Rg1 --template-file website.json --parameters @website.parameters.json
+10 ARM template can deploy unlimited number of resources
+11 To deploy ARM template using VS - right clikc the solution and choose deploy/new
