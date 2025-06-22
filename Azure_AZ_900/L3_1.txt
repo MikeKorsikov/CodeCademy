@@ -1,0 +1,19 @@
+# Azure Hierarchy
+
+Governance Structure:
+1. Management groups (to organise subscriptions)
+2. Subscriptions
+3. Resource groups (folders to organise resources)
+4. Resources
+
+###
+
+a) Azure subscriptions (container for user accounts)
+b) Azure AD tenant - unique AD instance 
+Both need to be linked
+
+Types:
+- free trial
+- pay as you go 
+- enterprise agreement 
+
