@@ -2,13 +2,13 @@
 
 Governance Structure:
 1. Management groups (to organise subscriptions)
-2. Subscriptions
+2. Subscriptions (container for user accounts, billing)
 3. Resource groups (folders to organise resources)
-4. Resources
+4. Resources (services)
 
 ###
 
-a) Azure subscriptions (container for user accounts)
+a) Azure subscriptions 
 b) Azure AD tenant - unique AD instance 
 Both need to be linked
 
@@ -16,4 +16,54 @@ Types:
 - free trial
 - pay as you go 
 - enterprise agreement 
+
+Support plans:
+- basic (no tech support, just self-help)
+- developer
+- standard
+- professional direct
+
+###
+
+Azure Policy - governance service (rules in JSON format)
+Goal is  goal is to ensure that your cloud environment remains compliant 
+with your organizational standards, security requirements, and regulatory mandates
+
+###
+
+Manage subscriptions via CLI:
+c:\> az login --tenant [tenant unique id]
+c:\> az storage account list << to list available accounts
+c:\> az account set --subscription [unique id] << to switch 
+
+###
+Manage subscriptions via PowerShell:
+c:\> get-command get*azad* <<< to list functions 
+c:\> connect-azaccount  <<<  prompts to login via browser
+c:\> get-aztenant <<< lists all tenants
+c:\> connect-azaccount -tenantid [unique id] <<< to authenticate
+
+###
+
+Management groups:
+Management groups > Tenant Root Group > Subscription
+- MGs could be nested
+- IAM access control enables creation of roles for MGs
+
+###
+Resource groups:
+- container for azure cloud resources
+- facilitates application of Azure Policies
+- manage IAM RBAC role assignment
+- help to track costs
+
+Create via:
+- Azure Portal, CLI, PowerShell, ARM template, application
+
+Moving resource between groups does not change resource region/location
+
+Creating RGs:
+Portal > Resource Groups > Create 
+
+
 

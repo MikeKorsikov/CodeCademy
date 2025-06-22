@@ -1,0 +1,18 @@
+### 
+
+Azure resource locks:
+- enable at subscription, RG or resource level
+- can't lock at management level
+
+Types:
+Read-only > can only view/read 
+Delete > can do all but delete 
+
+Deploy lock:
+Portal, ARM template, CLI, PowerShell 
+
+c:\> az account lock create --name "whatever name" 
+
+###
+
+Locks via GUI ...
