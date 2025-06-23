@@ -13,6 +13,48 @@ Portal, ARM template, CLI, PowerShell
 
 c:\> az account lock create --name "whatever name" 
 
+Control plane - locks apply
+Data plane - locks DON'T apply
+
 ###
 
-Locks via GUI ...
+Locks via GUI:
+
+Home > Management groups > Subscription > Settings > Resource locks > Add
+
+Details:
+Lock name
+Lock type (read only OR delete)
+Notes
+
+Impact: 
+Locks are inherited upstream
+Lock has to be removed before resource is deleted.
+
+###
+
+Portal > PowerShell
+new-azresourcelock -LockLevel -LockName -ResourceName ...
+
+###
+
+Managing resources between RGs
+- via portal
+
+Steps:
+1. Source + target
+2. Resource to move
+3. Review
+
+###
+
+TEST:
+1
+2
+3
+4
+5
+6
+7
+8
+9
