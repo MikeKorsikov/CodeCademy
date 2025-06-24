@@ -1,0 +1,31 @@
+# Managing Azure Storage
+
+Storage Account (SA) - resource part of IaaS
+
+SA contents:
+1. Blobs (binary large objects) 
+- blob == file
+- file storage
+- organised within containers
+- types: block, page, append
+
+2. File shares
+- shared folders in the cloud
+- accessable via drive mappings and mount points (SMB and NFS respectively)
+
+3. Queues
+- drop and read messages in the queue
+- message is not available to other processes
+
+4. Tables
+- NoSQL-based
+- support querying
+- tables contain entities
+
+###
+
+Settings:
+a) Access keys - to entire storage account
+b) Shared access signatures - to individual blob or subset of data
+c) Encryption - MS or customer managed
+d) Geo-replication for high availability
