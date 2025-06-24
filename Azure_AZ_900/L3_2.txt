@@ -49,12 +49,16 @@ Steps:
 ###
 
 TEST:
-1
-2
-3
-4
-5
-6
-7
-8
-9
+1 az resource lock create << to protect resource from being modified
+2 Management group - azure object serving as a monthly billing boundary
+3 When resource is moved bertween RGs - it is assigned new ID and RGs are locked
+4 Get-AzResourceLock << to show existing resource locks in PowerShell
+5 "management group" - in a search bar will navigate to existing management groups
+6 az account set << to select a subscription
+7 Single Azure tenant can have 1 or more subscriptions
+8 All resources are protected from modification if subscription has a read-only lock
+9 Lock options - delete and read-only
+10 If RG is deleted, all resources under it are deleted as well
+11 Maximum number of RG tags is 50
+12 Select-AzSubscription << to switch subscription via PowerShell
+
