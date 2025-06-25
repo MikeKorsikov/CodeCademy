@@ -29,3 +29,11 @@ a) Access keys - to entire storage account
 b) Shared access signatures - to individual blob or subset of data
 c) Encryption - MS or customer managed
 d) Geo-replication for high availability
+
+###
+
+SA Tiers:
+1. HOT - frequent access
+2. COOL - infrequent access (30 days ore more)
+3. ARCHIVE - offline (set at blob level)
+
