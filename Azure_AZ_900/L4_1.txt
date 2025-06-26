@@ -37,3 +37,40 @@ SA Tiers:
 2. COOL - infrequent access (30 days ore more)
 3. ARCHIVE - offline (set at blob level)
 
+###
+
+Shared access signatures:
+- set at the storage account or blob level
+- IP address restrictions
+
+###
+
+Creating SA:
+Home > Create resource > Storage account > create 
+Input: Subscription, Resource group, Account name, Region, Performance, Redundancy
+
+###
+
+Uploading Blobs (via Portal):
+a) Create container
+Home > Storage accounts > Account > Data storage > Containers > + container
+
+b) Upload blob
+Browse for files or drag and drop.
+
+Types of blobs:
+Block - standard files
+Page - larger files (VM disks)
+Append - logs
+
+###
+
+Uploading Blobs (via CLI):
+az login
+az storage account list
+az storage container create ...
+az storage blob upload ...
+az storage blob list ... < returns what is in the container
+
+
+
