@@ -1,0 +1,50 @@
+# 
+Managing blob via Azure storage explorer
+MASE - downloadable app
+
+Steps:
+1. Connect to Azure (multiple ways)
+2. Select or create a blob
+3. Upload folder or file
+
+###
+
+Copying Blob using AzCopy:
+AzCopy - free downloadable tool
+
+Authentication:
+C:\> login --tenant-id (unique ID from portal)
+
+Copying file to blob:
+C:\> azcopy copy file.txt https://accountname.blob.core.windows.net/blobname
+
+###
+
+Blob Soft Deletion:
+(file is kept for 7 days by default before permanently beinf removed)
+
+Could be applied to blobs or containers.
+Number of days can be modified.
+
+Home>Storage accounts> specific account > Specific container > file > undelete button
+
+Visibility:
+- show deleted containers
+- show deleted blobs
+
+###
+
+Managing blob storage tiers:
+
+For NEW resource:
+- during creation of resource in "advanced" tab
+- select "access tier" [hot - day to day, cool - infrequent]
+
+For EXISITNG resource:
+- Settings > Configuration > Blob access tier
+- select access tier [hot, cool]
+
+For specific Blob:
+- change tier
+- select tier [hot, cool, cold, archive]
+
