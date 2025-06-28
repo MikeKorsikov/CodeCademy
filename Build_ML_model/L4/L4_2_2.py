@@ -1,4 +1,4 @@
-# KNN regression is a type of algorithm used for regression tasks.
+# Weighted Regression 
 
 from movies import movie_dataset, movie_ratings
 
@@ -20,18 +20,3 @@ def predict(unknown, dataset, movie_ratings, k):
   distances.sort()
   #Taking only the k closest points
   neighbors = distances[0:k]
-
-  total = 0
-  for neighbor in neighbors:
-    title = neighbor[1]
-    total += movie_ratings[title]
-  # Return the average here
-  return total / len(neighbors)
-
-###
-print(movie_dataset["Life of Pi"])
-print(movie_ratings["Life of Pi"])
-###
-
-film_pr = predict([0.016, 0.300, 1.022], movie_dataset, movie_ratings, 5)
-print(film_pr)
