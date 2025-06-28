@@ -48,3 +48,35 @@ For specific Blob:
 - change tier
 - select tier [hot, cool, cold, archive]
 
+Rehydration - moving blob from archive to hot or cool tier (takes few hours)
+
+###
+
+Storage account netwrok access:
+- Create a storage account
+- tab "Networking"
+- Network access
+        a) public access from all networks
+        b) selected VMs and IPs
+        c) disable public access (use private access)
+
+###
+
+SA access keys:
+Home > storage accounts > account > security + networking > access keys
+
+Key 1 + connection string [primary]
+Key 2 + connection string [secondary]
+
+Keys are - security credentials used to authenticate and access an Azure Storage Account programmatically
+Need to be regularly rotated.
+
+Used in:
+- Azure Storage explorer
+- Rest API
+
+Managed via: Portal, Azure CLI, PowerShell
+Key vault: could store keys (best practice)
+
+###
+

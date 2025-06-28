@@ -1,0 +1,51 @@
+# 
+Shared Access Signatures:
+- gives temporary access to SA 
+
+Home > Storage accounts > account > Security + network > shared access Signatures
+
+Selectables:
+- allowed services
+- resource types
+- allowed permissions
+- versioning and index permissions
+- start and expiry dates/time
+- allowed protocols
+- preferred routing tier
+
+Strings:
+Connection string - used in code or SDK
+SAS token - used in API, scripts
+Blob service SAS URL - to download/access via browser or Azure Storage Explorer
+
+###
+
+Blob shared access Signatures 
+(more granular access compared to SA SAS)
+
+Home>Storage accounts>account>container>blob>generate SAS 
+
+Specify:
+a) permissions: add, read, delete etc
+b) IPs
+c) Start and expiry dates
+
+###
+
+TEST
+1  default SA encryption - using MS-managed keys
+2 Display key via PowerShell - (Get-AzStorageAccountKey -ResourceGroupName hq -Name storaccthq1).Value[0]
+3 Page blob - for uploading large virtual hard disk files
+4 Upload blob via CLI - az storage blob upload
+5 Regenerate key via CLI - az storage account keys renew
+6 Default network access - enable public access from all networks
+7 Cool tier - for infrequently accessed files 
+8 Default soft deletion period - 7 days
+9 Command to upload blob to SA via AzCopy - azcopy copy 
+10 Number of keys - 2
+11 To upload local file blob to SA via PowerShell - Set-AzStorageBlobContent
+12 An access key provides full access to a storage account, a SAS does not
+13 When generating SAS for blob - SAS URL provides access to blob
+14 If SA key or SAS is used, Azure Storage Explore removes need for RBAC role assignment
+15 Blob shows as "inferred" when tier is inherited from SA 
+16 
