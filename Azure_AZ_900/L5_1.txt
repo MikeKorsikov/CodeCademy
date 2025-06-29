@@ -1,2 +1,79 @@
 #
 Azure files
+- provides cloud based shared folder in Storage Account (SA)
+- accessable via SMB and NFS, API
+
+SMB - server message block (TCP port 445)
+NFS - network file system
+
+Settings:
+- URL
+- size, backups
+- storage tier
+
+###
+Managing via Portal GUI:
+Home > storage accounts > account > Properties > Data storage > File shares
+
+###
+Managing via CLI:
+az login
+az storage account list --query
+az storage share list --account-name whatevername
+az storage share create --name whatevername
+az storage file upload < to upload local file to cloud 
+az storage file list --share-name whatevername
+az storage share delete --name whatevername
+
+###
+Managing via PowerShell:
+get-azstorageaccount < lists accounts
+new-azstorageshare -name whatevername 
+get-azstorageshare -name whattevername
+set-asztoragefilecontent -sharename whatevername -source < uploading file 
+
+###
+Mapping:
+- Home > storage accounts > account > Properties > Data storage > File shares
+- select specific fileshare > browse > file.txt
+- click connect button > Windows > select letter > select authentication method
+- show script (copy)
+- on Windows PC > open PowerShell > paste script > Enter
+- This PC > shared drive should be visible
+
+###
+Azure File Sync:
+enables data on windows Server to be syncchronized with Azure File share
+- between on prem file server and azure storage
+
+Steps:
+- create a file share
+- create a Storage Sync Service resource
+- create a Sync Group within the resource (map to storage account)
+- download and install Azure File Sync agent 
+- register agent (local server)
+- add server endpoint to sync group (in Portal)
+
+###
+Clasifying data using Purview Governance:
+
+Purview - compliance solution that helps orgs to protect their data.
+
+Pillars:
+- data Governance
+- data security
+- risk and compliance
+
+Create account:
+Home > MS Purview accounts > Create new
+
+Register data source:
+Microsoft Purview > Data Map > Data sources > Register 
+
+Grant access to source:
+Home > Storage account > account > IAM > Add role assignment 
+select member > select Purview
+
+Scan data:
+Set a scan in Purview 
+Check data catalog for results
