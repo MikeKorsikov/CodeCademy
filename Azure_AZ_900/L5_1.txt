@@ -77,3 +77,16 @@ select member > select Purview
 Scan data:
 Set a scan in Purview 
 Check data catalog for results
+
+###
+
+TEST:
+1
+2
+3
+4
+5
+6
+7
+8
+9
