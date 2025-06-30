@@ -81,12 +81,12 @@ Check data catalog for results
 ###
 
 TEST:
-1
-2
-3
-4
-5
-6
-7
-8
-9
+1 Transaction optimized - default tier for Azure shared folder
+2 Creation: File share>SSS resource>group>installagent>register agent>add server
+3 CLI variables start with $ prefix
+4 Passing context in PowerShell - New-AzStorageShare -Name "fileshare2" -Context $ctx.Context
+5 Storage Sync Service - acts as the central management point for syncing your on-premises file servers with Azure file shares.
+6 Create purview account>register SA as Data Source>Set up authentication >Configure scan>Run
+7 TCP port 445 – Required for SMB protocol (used by Azure Files)
+8 /etc/fstab - file in Linux to place mount command
+9 SA must be created before shared folder is congfigured
