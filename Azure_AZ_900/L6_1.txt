@@ -1,0 +1,51 @@
+# Azure Network Infrastructure
+
+Azure network services:
+- virtual private network (site-to-site, point-to-site)
+- ExpressRoute (dedicated circuite)
+
+AVN Gateway - links on prem network to Azure Cloud
+
+VNet:
+- Azure Virtual Network
+- cloud based network with 1> IPv4 and IPv6 address spaces
+- contains subnets where resources can be deployed
+
+Azure Network Resources:
+- Public IP address
+- Route table
+- WAN (virtual wide area network)
+
+Network Security Groups:
+- inbound/outbound filtering
+- layer 4
+
+###
+
+DNS - Domain Name System
+Home > Virtual networks> vnet>DNS servers >
+Select Default or Custom (enter IP address)
+
+To check IP configuration:
+c:\> ipconfig /all
+
+To check DNS:
+c:\> nslookup
+
+###
+
+Creating DNS zone via Portal:
+DNS zone - collection of records within domain name
+DNS domain name - text string 
+
+1. Home>DNS zones > Create DNS zone
+2. Select subscription
+3. Provide instance details (name)
+4. Review and create
+5. Create a record set
+
+###
+
+Creating DNS zone via CLI:
+$ az network  --help
+$ az network private-dns zone create -g East -n whatevername.xyz
