@@ -49,3 +49,4 @@ DNS domain name - text string
 Creating DNS zone via CLI:
 $ az network  --help
 $ az network private-dns zone create -g East -n whatevername.xyz
+$
