@@ -1,0 +1,16 @@
+###
+Using Public and Private Endpoints
+
+Service endpoint - gives a secured way to connect VNet to Azure service
+Home > Virtual Networks > network1 > Settings > Service endpoints > Add
+
+Public - uses public IP addresses 
+Private - traffic does not leave VNet
+
+###
+
+Subnets - part of a larger network
+- contained within VNets
+- smaller chunk of IP addresses 
+- organize resources and control traffic
+
