@@ -49,4 +49,19 @@ DNS domain name - text string
 Creating DNS zone via CLI:
 $ az network  --help
 $ az network private-dns zone create -g East -n whatevername.xyz
-$
+
+Private DNS can be linked to VNet.
+Public DNS can not be linked to VNet.
+
+###
+
+Creating DNS zone via PowerShell:
+New-AzPrivateDnsZone -Name whatever.com < create zone
+New-AzPrivateDnsVirtualNetworkLink -ZoneName whatever.com < create link with VNet
+New-AzPrivateDnsRecordSet -Name "www" < to map domain to a resource (domain, IP)
+
+###
+
+Enabling Custom DNS Settings for VNet
+Home > Virtual networks> DNS servers (default or Custom)
+For custom > enter IP address.
