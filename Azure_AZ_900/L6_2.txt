@@ -14,3 +14,45 @@ Subnets - part of a larger network
 - smaller chunk of IP addresses 
 - organize resources and control traffic
 
+###
+
+Managing VNets:
+a) Portal 
+Home > create resource > marketplace > virtual network > create
+Bastion - jump server
+
+b) CLI 
+az network --help < to see all commands
+az network vnet create < create new vnet
+az network vnet list < to see all available
+
+az network vnet subnet create < create new subnet
+az network vnet subnet list
+
+c) PowerShell
+Create a variable:
+$subnet = New-AzVirtualNetworkSubnetConfig -Name Subnet1 -AddressPrefix 30.0.1.0/24
+
+Create new VNet:
+New-AzVirtualNetwork ... -Subnet $subnet
+
+###
+
+TEST:
+1 Add-AzVirtualNetworkSubnetConfig < to create new subnet in existing VNet using PowerShell
+2 az network vnet subnet list --resource-group rg1 --vnet-name <VNET_NAME>
+3 az network private-dns record-set a add-record < to add a DNS record to a zone
+4 Set-AzRouteTable < to update
+5 Configure VPN + SA + SA endpoint < to allow on-prem access to SA
+6 Variables in PowerShell start with $
+7 
+8 IPv4 default route is expressed as 0.0.0.0/0
+9 az network route-table route update < to change IP address within an existing route table 
+10 Subnets are visible under Vnet properties
+11 Get-AzPrivateDnsZone < to list DNS zone names linked to VNets
+12 To make VNet support IPv6, add IPv6 address range to Vnet
+13 A - IPv4, AAAA - IPv6
+14 subnet is a resource under VNet
+15 default DNS server setting for a Vnet - Azure provided.
+16 az network vnet list --query "[].subnets[].name" < to list all subnets
+17 To accessservice through VPN - you need private point.
