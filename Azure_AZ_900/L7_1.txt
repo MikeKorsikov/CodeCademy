@@ -1,3 +1,87 @@
-#
-Azure VNet Peering & VPNs
-$
+# Azure VNet Peering & VPNs
+
+VNet peering - connect two or more Azure Virtual Networks (VNets)
+- improved network performance
+- via private IP connectivty
+
+Managed via:
+a) Portal:
+home > virtual networks > vnet1 > Settings > Peering > add
+[IP address space should not overlap]
+
+
+b) CLI:
+Variables start with $
+az network vnet peering create --name vnet1tovnet2...
+
+c) PowerShell:
+Add-AzVirtualNetworkPeering -Name vnet1-vnet2 ...
+
+###
+
+VPN - encrypted network tunnel linking VPN endpoints
+ Protocols:
+ PPTP - depricated (not secure)
+ L2TP
+ SSL/TLS 
+
+Client-to-site VPN:
+- single endpoint to private network 
+- VPN client assign IP from IP address pool 
+User > VPN client software
+
+
+Site-to-site VPN:
+- links networks 
+On-prem network - local gateway - virtual gateway - azure services
+VPN client software not required
+
+###
+
+CA - certified authority
+PKI - public key infrastructure 
+Root certificate - certificate of a trust chain that you create and sign yourself
+Client certificate [X.509] - to authenticate client to server
+
+###
+
+Configure site-to-site VPN:
+home > create a resource > marketplace > virtual network gateway 
+Gateway type: VPN 
+
+home > create a resource > marketplace > local network gateway 
+Settings > Connections > Add
+connection type: site-to-site 
+
+###
+
+Configure point-to-site VPN:
+a) set up virtual network gateway object
+b) home > all resources > vpn > settings > point-to-site configuration 
+c) download VPN client (zip)
+d) install on client 
+
+###
+
+Azure ExpressRoute
+- service offering 
+- private ddicated wide area network (WAN) circuit 
+- require to configure on-prem router
+
+a) Create ExpressRoute resources 
+b) Provide service key to internet provider
+c) Configure on-prem 
+d) Link 
+
+###
+
+TEST:
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
