@@ -76,12 +76,12 @@ d) Link
 ###
 
 TEST:
-1 
-2 
-3 
-4 
-5 
-6 
-7 
+1 For point-to-site VPN, you need virtual network gateway.
+2 For site-to-site VPN, you need local and VPN gateways.
+3 To create peering - az network vnet peering create
+4 Confidentiality - primary benefit of VPN 
+5 (Get-AzVirtualNetworkPeering -ResourceGroupName Rg1 -VirtualNetworkName VNet1 | Select-Object PeeringState).PeeringState
+6 PKI certificates using hash - to sign certificates 
+7 Benefits of peering - private IP addresses, MS global backbone network.
 8 
-9 
+9 Benefit of ExpressRoute - predicatable bandwidth, isolation from public internet traffic
