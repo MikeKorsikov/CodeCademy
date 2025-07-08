@@ -1,2 +1,73 @@
 # Azure Virtual Machines
 
+VM - windows or Linux client and server OS images
+- does not need a public IP address
+
+VMSS - virtual machine scale set
+
+###
+Portal Deployment:
+a) Home > Virtual networks > subnet > check IP range
+b) Home > create resource > select image > enter details
+
+CLI deployment:
+az find 'vm create' < finding examples
+az vm create --resource-group ... (details) < deploying VM
+az vm list --query [].name < checking list of deployed VMs
+
+PowerShell Deployment:
+New-AzVm ... (details) 
+
+###
+
+Redeploying VM:
+Home > Virtual machines > vm1 > Help > Redeploy + reapply
+
+###
+
+Resizin VM:
+- changing underlying power
+- vertical scaling (adding CPU, RAM (GiB), disks)
+
+Portal: home > virtual machines > vm1 > setting > size 
+CLI: 
+> get-azvm
+> az vm resize ... (details)
+
+###
+
+SSH - Secure Shell
+[on Linux VM]
+
+When creating resource:
+Authentication account/authentication type - SSH
+SSH public key source: generate new
+Key pair name: ubuntu-name
+Public inbound ports: allow selected ports
+Select inbound ports: SSH (22)
+
+[Download private key locally]
+
+###
+
+Attaching Managed Disk to VM
+a) Create managed disk 
+b) home virtual machines > vm1 > settings > disks > attach existing disks (drop down list)
+c) login to VM > disk management > validate disks
+
+###
+
+Enable VM disk encryption:
+- change to encryption can only be done when disk is unattached or VM is deallocated
+
+a) Stop VM OR
+b) Home ? virtual machines > vm1 > settings > disks > data disks > detach
+c) home > all resources> disk1 > settings > encryption > key management (list)
+d) home > create a resource > key vault
+e) generate a key
+f) home  > all resources> create a resource > disk encryption Set 
+g) Map encryption set with key 
+h) home > all resources> disk1 > settings > encryption > key management (customer managed key)
+i) Save
+
+
