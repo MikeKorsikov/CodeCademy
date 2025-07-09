@@ -1,2 +1,60 @@
 #
 Deploying VM extensions
+
+Extension - software that enables post-deployment configurationand automation
+home > virtual machines > vm1 > settings > extensions and applications > Add
+
+Examples:
+Monitoring
+Security
+Scripting
+Backup
+Antimalware 
+
+###
+
+Capturing VM image - creating snapshot of VM disk state
+home > virtual machines > vm1 > Overview > Capture
+
+Used for:
+- replicating environments (create VM from image)
+- standardizing deplyment
+- preserve system state
+
+###
+
+AVD - Azure Virtual Desktop
+- cloud based VMs
+- accessable via browser or Windows client
+- user must be assigned to use AVD
+- user account must exist in Azure AD
+
+AVD Host pool - collection of VMs configured to deliver remote desktops.
+Pooled - multiple users share the same session host
+Personal - user assigned dedicated VM
+
+Deployment: 
+home > create a resource > create a host pool
+
+Process:
+a) create host pool
+b) create host VM
+c) create application group (AG)
+d) Assign users to AG
+
+###
+
+Access VDA via browser:
+a) rdweb.wvd.microsoft.com
+b) Enter AAD Tenant GUID and click Submit button
+c) Click on Session Desktop icon
+
+###
+
+Microsoft Defender - security platform
+- provides threat protection, compliance monitoring
+- provides recommendations
+- sends security alerts about attacks
+
+home > storage accounts > sa1 > Security + networking > Microsoft Defender for Cloud
+
