@@ -58,3 +58,22 @@ Microsoft Defender - security platform
 
 home > storage accounts > sa1 > Security + networking > Microsoft Defender for Cloud
 
+###
+
+TEST:
+1 Disk encryption set - is required to configure disk encryption
+2 VM redeployment - when VM network connectivity is sporadic
+3 AVD client - has benefit of app start menu integration
+4 VM extension - is a software agent
+5 SSH protocol - is used to manage Linux hosts
+6 MS Defender for Cloud - provides VM security recommendations, data classification (purview)
+7 Scaling up - adding CPUs to VM
+8 Private SSH key - must be stored with user management device (client)
+9 When VM is deployed - Azure resources are created (number depends on config)
+10 Azure compute galery - stores VM images
+11 Credentials - PwerShell parameter to specify username and password
+12 az vm resize -g Rg1 -n WinSrv2022-2 --size Standard_DS3_v2
+13 Session Host - to add VM to AVD host pool
+14 az vm list --query [].name < to list VM names
+15 Access AVD - Connect to the generic URL, sign in with assigned user credentials
+16 VM size - determines how many disks can be attached to VM
