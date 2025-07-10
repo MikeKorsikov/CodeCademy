@@ -1,2 +1,36 @@
 #
 Azure Containers
+
+Application container - executable software package that includes everything needed to run a specific application. 
+- logical app isolation boundry
+- entire app or a single app component
+
+Microsorvices:
+- specific app functionality
+- allows for app component decoupling
+
+Content of container:
+- scripts, filesystem
+- libraries
+- runtime environment 
+- config files
+
+Benefits:
+- portable
+- quick
+
+###
+
+Docket Host
+
+on Linux:
+> sudo apt install docker.io
+(docker engine installed)
+
+www.hub.docker.com
+
+> sudo docker images << to show existing images
+
+***
+
+on Windows:
