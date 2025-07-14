@@ -34,3 +34,34 @@ www.hub.docker.com
 ***
 
 on Windows:
+CLI or GUI (Docker Desktop Installer.exe)
+
+> docker images < to list images
+> docker pull alpine < to install image
+
+###
+
+Building image from Dockerfile:
+
+$ sudo service docker status
+$ sudo nano dockerfile < create a file
+$ sudo docker build -t webap1 .
+
+###
+
+Creating container registery:
+- repository for container images
+home> create a resource > marketplace > container registry > create
+
+Container instance - running instance of a Docker container
+
+Image = blueprint (e.g., a recipe)
+Container instance = actual running application (e.g., a cooked dish)
+
+TEST:
+1 Docker Hub and ACR - derive container images from
+2 Hyper-V and WSL apps allow to run Linux container on Windows Docker host
+3 sudo docker images < shows all local images
+4 Dockerfile - expected name to build an image
+5 sudo docker tag < CLI command to rename local container image
+6 containerized application appear to the host OS as a running process.
