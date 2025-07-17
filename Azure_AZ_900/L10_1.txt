@@ -1,1 +1,74 @@
 # Azure Application Service
+
+- platform as a service
+Accomodating resource:
+App service plan
+
+###
+
+Deploying app via portal: 
+home > create a resource > Web App
+Runtime stack: (development language, e.g. Python)
+Pricing plan: size of the machine (GB, CPU)
+
+###
+
+Deploying app via Visual Studio:
+- establish connection with Azure
+- new project (azure resource group)
+- select template (web app)
+
+###
+Deployment slots:
+- to have multiple environments (test, staging, prod) for testing and deployments
+home > app services> webapp1 > deployments > deployment slots
+
+###
+
+(assumes you own custom domain with domain provider)
+Custom DNS Domain Name:
+home > app services > webap1 > settings > custom domains > add custom domain
+Domain: (custom domain)
+Azure and custom domain names will point to the same IR.
+
+###
+
+Enabling HTTPS:
+- if you dont want to use azure name but instead custom domain
+home > app services > webap1 > settings > custom domains > add binding
+
+(you need to generate and upload certificate)
+home all resources > vault1 > certificates > create certificate
+
+home > app services > webap1 > settings > certificates > bring your own certificate 
+source: import from key vault
+
+Use certification authority instead of self-signed certificates.
+
+###
+
+Content delivery network (CDN):
+- example of know and widely used cloudflare.net
+- network of servers to deliver web content
+- servers located close to users to improve performance (latency)
+
+Settings:
+-geo filtering
+- compression
+- caching rules
+- HRRPS custom domains
+
+###
+
+Enabling CDN: 
+home > app services > weapp > networking > create a new front door
+
+TEST:
+1 App Service Plan - stores the underlying VM sizing configuration
+2 Production - default web application deployment slot
+3 azurewebsites.net - default DNS domain suffix for newly created Azure web sites
+4 To deploy app via Visual Studio - ricgh click on solution, choose deploy
+5 Characteristic 2 - associated with autoscaling
+6 Azureedge.net - default DNS domain suffix for an Azure CDN configuration
+7 443 port - default listening port for HTTPS
+8 Benefit of CDN - Reduced network latency
