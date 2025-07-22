@@ -1,4 +1,46 @@
 # Azure RBAC & Azure Policy
 
+RBAC - role based access control
+- determines azure resource management capabilities
+- delegates access controls
 
+Types of roles:
+- built-in roles
+- custom roles
 
+Roles - are used to groupe permissions
+Owner - full control
+Contributor - resource control, except granting access
+Reader - read-only access
+
+Assignment:
+- user
+- group
+- service principal (application)
+- managed identity 
+
+Scopes:
+- management groups, subscriptions
+- resource grous
+- individual resource
+
+###
+Access management via portal:
+portal > resources > Access Control (IAM) > roles
+[lists all built-in roles under the resource]
+
++ Add:
+Add role assignment
+Select role > next
+Select members  > search user
+Review and assign
+
+#
+CLI:
+> $store = az storage account show < assign storage account to variable 
+> az role definition list --scope $store < list roles
+> az role assignment create --role "Name of role" --assignee user email
+> $store.id < to check if role was assigned
+
+###
+PowerShell:
