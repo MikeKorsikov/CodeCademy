@@ -43,4 +43,10 @@ CLI:
 > $store.id < to check if role was assigned
 
 ###
-PowerShell:
+Create custom role:
+(created at the subscription level)
+Home > Subscriptions > Subscription > Subscr1 > Access control (IAM) > Add
+
+- Basics (Custom role name)
+- Permissions (select permissions and resources)
+
