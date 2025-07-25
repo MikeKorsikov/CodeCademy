@@ -41,3 +41,19 @@ home > policy > Definitions > + initiative definition
 Trust Portal:
 - ISO, SOC, GDPR, PCI, FedRAMP, CSA Star etc compliant
 
+###
+
+TEST:
+1 Certifications, regulations, standards, reports, whitepapers sections in Service Trust Portal
+2 Users, service principals - can be assigned roles using Azure RBAC
+3 Initiative -A bundle of Azure policies that can be deployed all at once
+4 JSON - syntax used to create custom Azure Policy rules
+5 Azure Entra - is the service used to manage top-level roles
+6 RBAC purpose - to manage and secure azure resources
+7 New-AzPolicyAssignment - to create and assign a new Azure Policy to a specific scope
+8 "az role" module is used to manage RBAC via CLI
+9 "az policy" module is used to manage Azure Policies via CLI
+10 Policy purpose - To define, assess, and enforce policies for resource deployment and configuration
+11 New-AzRoleAssignment - to create and apply a new role assignment via PowerShell
+12 Custom roles in Azure are typically created at the subscription level.
+13 Azure Policy - service used to manage policies
