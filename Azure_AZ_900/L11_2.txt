@@ -1,0 +1,43 @@
+# Azure Policy
+- governance tool
+- resource control
+- to enforce organisational standards
+- assess resource configuration compliance
+
+Effects:
+- append
+- audit
+- auditIfNotExist
+- DeployIfNotExist
+- deny
+- modify
+
+
+Initiatives - groups of policies
+
+Policy management:
+- Portal: home > policy > assignments > assign policy
+- CLI: az policy assignment create --name "demo1"
+- PowerShell: New-AzPolicyAssignment -Name "whatever"
+
+###
+Custom policies.
+
+Policy definition:
+Home > Poilicy | Definition > + policy definition
+- JSON format
+- rule based (if, then)
+
+###
+
+Policy initiatives.
+- group policies together
+
+home > policy > Definitions > + initiative definition
+- policies > add policy definion(s) > search (tick boxes)
+- review + create
+
+###
+Trust Portal:
+- ISO, SOC, GDPR, PCI, FedRAMP, CSA Star etc compliant
+
