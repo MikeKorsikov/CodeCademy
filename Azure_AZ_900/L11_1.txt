@@ -50,3 +50,16 @@ Home > Subscriptions > Subscription > Subscr1 > Access control (IAM) > Add
 - Basics (Custom role name)
 - Permissions (select permissions and resources)
 
+Assigning custom role:
+home > [resource] > Access Control (IAM) > Add > Add role assignment > role 
+- search for the role > select > next
+- members > select members > search person
+- review and assign
+
+###
+Managing AD roles:
+home > default directory > manage > roles and administrators
+(shows all the roles in Azure)
+
+home > default directory > manage > users
+(shows all users under tenant)
