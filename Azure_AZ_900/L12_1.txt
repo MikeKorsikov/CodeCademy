@@ -1,2 +1,40 @@
 # Managing Azure costs
 
+Reserved pricing:
+- recommended for constant resource usage
+- commitment to 1-3 years
+
+Spot VMs:
+- provide discount of unused compute capacity
+- uptime not guaranteed
+- sets a max price
+
+Pricing calculator:
+- estimate costs of azure services
+
+Azure cost budgets:
+- define spending limits
+- sets alerts
+
+###
+Create reservation on Portal:
+
+home > reservations > Add
+- select product/service for which reservation is needed (e.g. VM)
+- "buy now" reservation
+
+### 
+Analyze costs:
+home > subscriptions > sub1 > cost analysys
+- breakdown by: service, location and resource group
+
+###
+Tagging resources:
+- label for resource to identify, organize and classify resource
+- allows cost analysis by tag (add filter "Tag")
+
+###
+Portal: home > RGs > rg1 > resource1 > overview > tags > Add tag
+CLI: 
+PowerShell: 
+
