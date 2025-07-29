@@ -35,6 +35,33 @@ Tagging resources:
 
 ###
 Portal: home > RGs > rg1 > resource1 > overview > tags > Add tag
-CLI: 
-PowerShell: 
+CLI: az storage account update ... --tags foo=bar [represents parameter and value]
+PowerShell: ([resource details] -Tags @{"foo"="bar"}).Tags << set key value pair
 
+###
+Budget:
+home > subscription > sub1 > Cost management > Budgets > Add
+Reset period: (e.g. monthly)
+Alert conditions: (actual or forecasted) at % of budget
+
+###
+Pricing + TCO calculator
+
+Inputs:
+- Product
+- Region
+- OS
+- Tier
+- instance
+
+###
+TEST:
+1 Pricing calculator - tool that can predict cost of azure resource
+2 Tags - are used to label resources for meaningful identification
+3 "-Tags" switch - is used to apply tags in PowerShell
+4 Wobly cost line - paying by usage 
+5 Reserved VM - commit to having a VM for a period of time
+6 Forecasted - type of alert based on estimated exceed 
+7 "--tags" switch - to apply tags via CLI
+8 Spot VM - key feature, provide discount (up to 90%)
+9 "Tags" - field containing list of tags for a resource
