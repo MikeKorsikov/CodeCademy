@@ -1,0 +1,3 @@
+###
+Managing AD applications:
+home > microsoft entra ID > app registrations > new registration
