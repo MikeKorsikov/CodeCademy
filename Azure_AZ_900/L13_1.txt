@@ -1,3 +1,66 @@
 # Managing Azure AD
 
+Active Directory - identity and access management service
 
+Azure AD Tenant - unique instance of Azure AD service (domain name, groups, policies)
+[name.microsoft.com]
+
+###
+AD administrative unit (AU):
+- containers used to organise users and groups into AUs
+- allows to delegate admin permissions to sets of users, groups
+- without givinbg access to enture directory
+- require premium license
+
+###
+AD applications:
+- configured to allow software to integrate with Azure AD for authentication
+
+###
+Azure AD = Entra ID:
+- authentication and authorisation of users
+
+###
+Azure Portal:
+home > Microsoft Entra ID
+users > all users 
+groups > all groups
+app registration > 
+
+###
+CLI:
+> az account show << show scurrent account
+> az ad user list  << to see all users
+> az ad group list << to show all groups 
+
+###
+PowerShell:
+> Get-AzTenant << to show tenant
+> Get-AzADUser << top show users
+> Get-AzADGroup << to show list of groups
+
+###
+Create tenant:
+home > manage tenants > + create
+
+Type of tenant: 
+- Microsoft Entra ID (MS365)
+- Azure AD B2C (Facebook)
+
+Domain name: whatever
+Location: drop down list
+
+###
+Managing AU:
+home > Microsoft Entra ID > Manage > Administrative Units > Add
+- Properties
+- Assign roles
+
+To assign user to AU:
+home > users > user1 > administrative units > assign to admin unit
+NB - users can belong to many units
+
+###
+Custom DNS:
+home > manage > custom domain names > add custom domain
+(MS will verify that you have access to that domain)
