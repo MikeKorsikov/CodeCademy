@@ -1,3 +1,52 @@
 ###
 Managing AD applications:
 home > microsoft entra ID > app registrations > new registration
+
+###
+Managing (add) users:
+Portal - home > manage > users > new user
+CLI - as ad user create 
+PowerShell - New-AzADUser
+
+###
+Bulk import:
+- via file upload to portal
+- home > users > bulk operations > bulk create
+- download csv temaplate, populate, upload file
+
+###
+Guest users:
+- to invite external users to participate in tenant
+- New user (invite external user)
+- User type (guest)
+- Assignments (groups, roles)
+
+###
+Dynamic Groups:
+- tool to streamline user access
+- based on user attributes
+- udate group membership automatically
+- reduces the risk of error
+- automates license assignment
+- consistent access control
+
+Create:
+- define group criteria
+
+###
+
+TEST:
+1 Tenant creation attributes - domain name, organisation nae 
+2 Maximum number of AU user can be part of - unlimited
+3 New-AzADUser to create user via PowerShell
+4 Tenant purpose - define and manage core aspects within an Azure ecosystem
+5 Invite external user - to create a reference to a user from another Azure tenant
+6 Tenant purpose - to manage and secure an organization's digital identities
+7 Certificates & secrets - app registration section to create a client secret
+8 Domain name verification - validated by Microsoft
+9 az ad user create - to create user via CLI
+10 Create new user - option to create a direct member user in an Azure tenant
+11 Dynamic group use cases - access control, license assignment
+12 az ad user - CLI module to manage users
+13 CSV template is needed for bulk upload
+14 Get-AzADUser - for reading Azure AD users via PowerShell
