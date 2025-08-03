@@ -2,6 +2,7 @@
 Managing AD applications:
 home > microsoft entra ID > app registrations > new registration
 
+
 ###
 Managing (add) users:
 Portal - home > manage > users > new user
