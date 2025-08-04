@@ -1,0 +1,10 @@
+### 
+Managing Azure Authentication
+
+Methods
+SSO
+MFA
+SSPR
+
+Authentication - proof of identity
+Authorization - access to resources based on permissions
