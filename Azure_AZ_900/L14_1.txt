@@ -7,4 +7,44 @@ MFA
 SSPR
 
 Authentication - proof of identity
+- username and password
+- key fob
+- biometric
+- PKI
+
 Authorization - access to resources based on permissions
+
+###
+Entra ID authentication:
+- users
+- devices
+- service principals 
+- managed identities
+
+MFA:
+- you are (fingerprint)
+- you know (password)
+- you have (card)
+- you do
+
+###
+Passwordless Login:
+- allow to sign in without password
+- mitigates phishing attacks
+- password is replaced with sth you have
+
+Sth you have:
+- windows devide
+- key fob
+- smartphone with authentication app
+
+sth you know:
+- PIN
+- fingerprint
+- facial recognition
+
+Microsoft Authentication App
+Security key (USB)
+
+###
+SSO:
