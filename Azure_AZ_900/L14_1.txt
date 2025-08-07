@@ -48,3 +48,25 @@ Security key (USB)
 
 ###
 SSO:
+- authentication method
+- removes need to sign in each app after initial authentication
+- authentication in the background
+
+Methods:
+- Identity Federation (centralized trusted authenticator < apps rely on it) << digitally signed tokens
+- password
+- linked (redirected)
+
+SAML - Security Assertion Markup Language
+TTP - Trusted Third Party Authentication (Google, LinkedIn etc)
+
+###
+Service Principals - object, representing app, used to grant permissions
+Types:
+  - Legacy
+  - Application
+  - Managed Identity
+
+Managed Identities - 
+a) System assigned - toied to lifecycle of resource
+b) User assigned - associated with multiple resources
