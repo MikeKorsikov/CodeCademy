@@ -1,0 +1,42 @@
+###
+Managing Service Principles:
+add role assignment (of resource) to service principal
+
+Managing Managed Identities:
+1- resource > security > identity > enable managed identity > (id generated)
+2- resource > IAM > add > role assignment > assign to : managed identity (from list)
+
+###
+Enabling MFA:
+home  > users > user1 > ... > MFA > (tickbox) > enable
+
+Steps:
+1) Enter email and default/initial password
+2) Microsoft authentication app
+3) Enter new password
+4) next time login only via Microsoft Authentication App
+
+###
+Conditional access:
+(depends on premium license)
+named locations > + IP ranges location
+home > security > conditional access > create new policy
+(specify what is allowed, and other variables)
+
+###
+SSPR - self service password reset
+home > security > authentication methods 
+home > users > manage > properties > selected > choose group
+
+###
+TEST:
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
