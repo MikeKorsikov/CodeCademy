@@ -30,13 +30,14 @@ home > users > manage > properties > selected > choose group
 
 ###
 TEST:
-1 
-2 
-3 
-4 
-5 
-6 
-7 
-8 
-9 
-10 
+1 Enabled - means MFA configured but not in effect
+2 SSPR - user can unblock own account and sign in
+3 Configuration of Enterprise app - results in creation of service principal
+4 Passwordless login - prevents password spraying and phishing
+5 Service principal benefit - ability to assign permissions to the app
+6 Named locations are needed - to create conditional access policies 
+7 Federation, Linked - are valid SSO methods
+8 Biometric, PIN authentications - used to authenticate with MS Authenticator app
+9 Claim - assertion about user or device attribute during federation authentication
+10 FIDO 2 key - physical hardware key that plugs as USB
+11 To assign permission to code running on VM - enable VM managed identity.
