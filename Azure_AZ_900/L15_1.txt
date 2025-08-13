@@ -1,11 +1,29 @@
 ###
 Azure Service Resilience:
-- 
--
+RTO - Recovery Time Objective (maximum amount of time a service can be inaccessible)
+RPO - recovery Point Objective (maximum tolerable data loss)
+IRP - Incident Response Plan
+DRP - Disaster Recovery Plan (unique per process, system)
+ASR - Azure Site Recovery
 
+###
+Back on prem server to cloud
+1. Create recovery services vault
+2. Configure vault (where and what)
+3. Download and installagent on VM
+4. Link VM to Azure
+5. Create a schedule (Specify what to backup and when)
+
+
+###
 TEST:
-1
-2
-3
-4
-5
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
