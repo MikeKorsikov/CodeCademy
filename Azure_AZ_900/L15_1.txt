@@ -14,6 +14,18 @@ Back on prem server to cloud
 4. Link VM to Azure
 5. Create a schedule (Specify what to backup and when)
 
+###
+Enable VM replication:
+home > virtual machines > vm1 > operations > disaster recovery 
+
+Enable Web App backup:
+home > app services > app1 > settings > backups
+
+###
+Load balancing:
+- step to increase app availability
+- if host fails, other servers are running
+
 
 ###
 TEST:
