@@ -25,7 +25,29 @@ home > app services > app1 > settings > backups
 Load balancing:
 - step to increase app availability
 - if host fails, other servers are running
+- controls app traffic distribution to backend hosts
 
+WAF (Web Application Firewall):
+- part of azure app gateway
+
+Configuring load balancer:
+1. home > Create a resource > load balancer > create
+2. Configure frontend IP configuration (listiner)
+3. Add backend pool 
+4. Add VMs to backend pool
+5. Add loadbalancing rule (set listening port: 80)
+
+###
+Create VMSS (virtual machine scale set):
+1. home > create aresource > marketplace > VMSS
+2. Configure VMSS
+3. deploy
+
+###
+Enable storage account Blob File Versioning:
+1. home > storage account > overview > data management > data protection
+2. ...data storage > containers > + container
+3. ...containers > data > file > versions
 
 ###
 TEST:
