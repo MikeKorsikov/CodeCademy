@@ -51,13 +51,11 @@ Enable storage account Blob File Versioning:
 
 ###
 TEST:
-1 
-2 
-3 
-4 
-5 
-6 
-7 
-8 
-9 
-10 
+1 Scaling out - adding more VMs to handle increased demand
+2 Recovery service vault - required to backup on-prem server to cloud
+3 Inbound NAT rule - configuration that allows to remotely manage VM behind load balancer
+4 Load balancer - is a OSI layer 4, transport
+5 RTO - recovery time objective, longest app can be down
+6 VM replication - VM and related resources are recreated in target region
+7 Web app default backup is every hour
+8 Storage account lifecycle rule - allows to define transitioning, archiving and deletion of files
