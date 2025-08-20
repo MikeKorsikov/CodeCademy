@@ -1,5 +1,33 @@
 ### Azure Software Development Services
 
+Azure DevOps - tools and ways of working around collaboration
+Azure DevOps Services - cloud
+Azure DevOps Server - on prem
+
+Components:
+Azure Boards 
+Azure pipelines (build, test, release)
+Azure Repos (version control)
+Azure Test Plans (support testing process)
+Azure artifacts
+Azure extensions (integrations)
+
+###
+Message queue:
+- needed to enable asynchronous communication between different components of cloud-based applications, to trigger actions
+Create queue: home > storage account > data storage > queues > + queue
+Create message: ...queues > que1 > + Add message
+
+###
+Azure Function App:
+- enables you to run small pieces of code (called "functions") without having to manage infrastructure. 
+- It's designed for event-driven programming
+
+Create function: home > Create a resource > create function app
+Configure function: home > function1 > Create in Azure portal > (select template)
+
+###
+Azure Logic App:
 
 ###
 TEST:
