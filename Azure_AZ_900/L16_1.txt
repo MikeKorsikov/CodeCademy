@@ -28,16 +28,21 @@ Configure function: home > function1 > Create in Azure portal > (select template
 
 ###
 Azure Logic App:
+- enables to automate workflow and integration of apps, data, services
+- integration service
+home > create resource > create logic app
+
+###
+Azure Blueprints:
+- governance and compliance tool
+- standardize and automate deployment of environemtns 
+home > (searchbar) > blueprints > create
 
 ###
 TEST:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+1 Azure Blueprints role - defining repetable azure resources according to org standatrds.
+2 Azure Functions - trigger off specific events and executing small bits of logic
+3 Azure reports - used to store source code
+4 Azure Logic apps purpose - executing workflows using no-code/low-code
+5 Message - content of the azure storage account Queue
+6 Benefit of Blueprints - enabling orgs to adhere to specific policies, standards
