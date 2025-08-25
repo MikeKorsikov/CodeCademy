@@ -1,10 +1,40 @@
 ### Monitoring Azure Services
 
+Strategy:
+- application health
+- end user performance experience
+- sequrity requirements
+- alerts
+
+Goals of monitoring strategy:
+- manage cloud services
+- reduce complexity
+- optimise monitoring processes
+
+###
+home > monitor > log analytics workspaces
+
+Configure monitoring:
+home > monitor > service health
+
+###
+Configure alerts:
+home > monitoring > alerts > +create
+
+###
+Enable insights:
+home > monitor > insights > applications > +create
+
+###
+Managing logs: 
+
 
 TEST:
-1
-2
-3
-4
-5
-6
+1 UX - priority in developing monitoring strategy
+2 Benefits of central querying - allows to generate summary statistics, provides a way to monitor app halth
+3 Tables - section of log analytics worskpace used to explore categorized data
+4 Configure actions to be taken when alert triggered - purpose of creating an action group
+5 Service health - used to view health of azure services
+6 Centralized access - benefit of using Azure Monitor to access and view performance metrics
+7 Offers guidance for improving your Azure deployments - benefit of using Azure Advisor recommendations
+8 To identify and resolve problems in applications - purpose of configuring Application Insights
