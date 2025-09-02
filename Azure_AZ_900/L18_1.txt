@@ -1,11 +1,58 @@
 ### Azure Secure Networks
+- restricting trafic (allowing or denying)
 
+NSG - network security groups
+Security rules - how traffic is treated
 
+Parameters:
+- source (IP)
+- destination (IP, app)
+- port 
+- protocol
 
+Properties:
+- direction
+- port rang
+- action (allow or deny)
+
+###
+Create new NSG:
+home > network security groups > + create
+
+Configure NSG:
+home > NSGs > nsg1 > settings > inbound security rules
+home > NSGs > nsg1 > settings > outbound security rules
+
+NSG is attached to networks
+
+###
+CLI:
+> az login
+> az network nsg list <- list all groups
+> az network nsg create -g resourcegroupname1 -n whatevernsgname1 <- to create new nsg
+
+###
+PowerShell:
+> Connect-AzAccount
+> Get-AzNetworksSecurityGroup <- to list all NSGs
+> New-AzNetworkSecurityGroup -ResourceGroup whatevername -Nanem whateverNSGname1
+
+###
+Azure Firewall:
+- protects VN resources by controlling traffic using stateful packet inspection, high availability and scalability
+- block traffic from known malicious IPs
+- Basic, Standard and Premium
+- attached to a Virtual Network
+
+Application rule - filter traffic based on FQDN
+
+###
 TEST:
-1
-2
-3
-4
-5
-6
+1 purpose of configuring network rules for Azure Firewall - To deny access to external networks
+2 purpose of configuring application rules for Azure firewall - To deny specific outbound access
+3 purpose of configuring DNAT - To translate inbound internet network traffic and route it to specific internal resources
+4 Get-AzNetworkSecurityGroup -ResourceGroupName <name> -Name <name> - PowerShell command retrieves a single Azure network security group
+5 Azure Firewall Basic - designed for organizations that are just starting their cloud journey
+6 Azure network security groups - service is used to create Azure NSG
+7 az network nsg list - in CLI lists all Azure network security groups
+8 primary purpose of Azure network security groups - To filter and control network traffic within the Azure environment
