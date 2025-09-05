@@ -1,6 +1,34 @@
 ### Migrating to Azure
 
+Azure NetApp Files - file storage service 
 
+Storage Account Types:
+- standard
+- premium block blobs
+- premium file shares
+- premium page blobs
+
+###
+Azure Import/Export Service - transfers large scale data to storage
+- ships physocal drives to DC
+- orchestrates transfer process
+- uses WAImportExport tool
+- transfer using jobs (REST API)
+
+###
+Process:
+- download zip file
+- execute file
+- format drive (NTFS)
+- turn on bitlocker (to encrypt drive)
+- prepare import journal .jrn
+
+Moving data:
+- Azure migrate | Data box
+- create a job
+- select carrier, shipping address
+
+###
 TEST:
 1
 2
