@@ -30,11 +30,10 @@ Moving data:
 
 ###
 TEST:
-1
-2
-3
-4
-5
-6
-7
-8
+1 Export job - To guide the process of exporting data from Azure
+2 Azure Import/Export Service purpose - To physically ship a drive containing large data to Microsoft for Azure import
+3 import job - To guide the process of importing data into Azure
+4 Azure Import/Export Service - A service that uses physical disk drives to enable rapid and secure data migration to Azure
+5 PrepImport command - To start the import process with a prepared disk
+6 purpose of configuring BitLocker - To encrypt and secure the physical drive
+7 advantage of using Azure Storage Services - Provides security measures to safeguard data
