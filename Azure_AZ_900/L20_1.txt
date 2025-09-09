@@ -1,1 +1,14 @@
-# Exam prep
+# Exam prep AZ-900
+
+Sections:
+1. Cloud concepts (25-30%)
+2. Azure architecture and services (35-40%)
+3. Azure management and governance (30-35%)
+
+# of questions = 50
+Cost = 100$
+
+###
+Scale out - add VMs
+
+
