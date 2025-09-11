@@ -12,3 +12,4 @@ Cost = 100$
 Scale out - add VMs
 
 
+
