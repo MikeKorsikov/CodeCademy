@@ -12,4 +12,14 @@ Cost = 100$
 Scale out - add VMs
 
 
-
+###
+1 Private endpoints - create a network interface in the selected subnet for secure communication.
+2 Azure Policy definitions - use JSON syntax for defining conditions and effects.
+3 Use parameters and a parameters file in ARM templates - to avoid hard-coding VM details.
+4 VNet peering - enables private IP communication and ensures traffic does not traverse the internet.
+5 Default MFA state for new Microsoft Entra ID users is - Disabled.
+6 SSH public key - is stored on the virtual machine in the authorized_keys file.
+7 Default DNS suffix for Azure web apps is - azurewebsites.net.
+8 To receive SMS alerts for VM CPU spikes - create an alert rule and an action group.
+9 Use a shared access signature (SAS) to grant read-only blob access when users lack Azure AD accounts.
+10 "Azure architecture and services" is the largest AZ-900 exam domain.
