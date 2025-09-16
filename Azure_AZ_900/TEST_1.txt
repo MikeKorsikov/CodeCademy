@@ -1,7 +1,28 @@
 TEST
-1
+1 
+RDS - remote Desktop Service
+RDC - Remote Desktop Connection
+AVD - Azure Virtual Desktop
+RADC - RemoteApp and Desktop Connections
+
+AVD supports: Windows, iOS, macOS Android, Web browsers [clients]
+AVD does NOT support: RDC or RADC [clients]
+AVD provides screen capture protection.
+
+Flow: AVD config > Client config > Authentication > Connection session > Streaming to user device
+
 2
+Private clouds - fit for organizations that require control over their computing resources, such as mid- to large-sized banks and municipal governments. Concerns: security and control.
+
 3
+Azure subscription - groups resources for the purpose of billing and access copntrol.
+Entra ID - identity and access management service.
+
+> AS can be transfered to Azure account in another country
+> AS can help customers monitor billing and usage
+> Mustiple ASs can trust the same Entra ID [many to one]
+> One AS trusts one Entra ID
+
 4
 5
 6
