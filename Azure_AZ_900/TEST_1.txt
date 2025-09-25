@@ -29,12 +29,38 @@ Hybrid cloud - computing environment that combines elements of both private clou
 
 5
 Serverless computing - used to deliver exact units of resources when application needs it.
+> eliminates the need for pre-provisioning resources,
+> ideal for task-based execution (e.g. query), consume resources only when triggered
 
 6
+PaaS - choice for deploying a web application without installing or managing an operating system or web server
+> eliminates the need for infrastructure management
+> provides a complete cloud-based deployment environment, including tools for development, testing, debugging, patching, and deployment
+
 7
+Azure Blob - object store for binary and text data
+Azure Files - managed file share for on-prem or cloud deployments (accessable via SMB or NFS protocols)
+Azure Queues - store for messaging between applications(using HTTP or HTTPS)
+Azure Tables - NoSQL for for structured data
+Azure Disk - storage volumes for Azure VMs, equivalent of physical disk
+
 8
+Azure Monitor - solution to collect, analyze and act on telemetry data for tracking performance, availability and health of application, infra or service.
+> Alerts proactively notify users of critical conditions and can trigger corrective actions
+> Users can create alerts using Azure Monitor, including both metric-based and log-based alert rules
+> To manage alerts, users must have Monitoring Contributor or Monitoring Reader built-in role.
+> The Alerts available (stored) for 30 days
+
 9
+Azure Log Analytics - service for determining the root cause of intermittent errors
+
 10
+Azure Sport VM - allow you to run workloads on unused Azure capacity at a significantly reduced cost
+> ideal for interruptable workloads (batch processing, rendering jobs, testing)
+> can be evicted based on capacity or price
+> availability depends on size, region and time
+> evicted or deleted
+> supported on D and E-series
 
 11
 12
