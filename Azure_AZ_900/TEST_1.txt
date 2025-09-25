@@ -24,9 +24,12 @@ Entra ID - identity and access management service.
 > One AS trusts one Entra ID
 
 4
-
+Hybrid cloud - computing environment that combines elements of both private cloud and public cloud infrastructures
+> enables cloud bursting, allowing organizations to temporarily use public cloud resources when demand spikes
 
 5
+Serverless computing - used to deliver exact units of resources when application needs it.
+
 6
 7
 8
