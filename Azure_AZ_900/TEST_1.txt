@@ -55,7 +55,7 @@ Azure Monitor - solution to collect, analyze and act on telemetry data for track
 Azure Log Analytics - service for determining the root cause of intermittent errors
 
 10
-Azure Sport VM - allow you to run workloads on unused Azure capacity at a significantly reduced cost
+Azure Spot VM - allow you to run workloads on unused Azure capacity at a significantly reduced cost
 > ideal for interruptable workloads (batch processing, rendering jobs, testing)
 > can be evicted based on capacity or price
 > availability depends on size, region and time
@@ -63,16 +63,52 @@ Azure Sport VM - allow you to run workloads on unused Azure capacity at a signif
 > supported on D and E-series
 
 11
+Scalability - ability to increase or decrease resources as needed.
+Types:
+> manual - adjusted by admin
+> automatic - by the system
 
 12
+Blueprint - service that helps you define, deploy, and manage cloud environments.
+Artifacts: ARM templates, role assignment, policy assignment, resource groups.
+
 13
+Total Cost of Ownership calculator - tool to estimate the financial impact of migrating from on-premises infrastructure to the cloud.
+Steps: Define workloads > Adjust assumptions > View the report
+
+
 14
+Microsoft Purview - platform/service that helps organizations manage, protect, and gain insights from their data (on-prem, cloud, in SaaS).
+
 15
+Entra ID Smart Lockout - default security feature that locks out bad actors which try password guessing or use brute-force. Tracked at the DC level. Has gradual increase in time for new failed attempt.
+
+
 16
+Azure functions - code service [local or cloud] executing code/functions in response to events.
+Logic Apps - no-code service [cloud] to automate workflows, integrate systems, data and services. Triggered by events [from connectors].
+Event grid - no-code service that orchestrates [routes] events enabling communication between apps, services.
+
 17
+Blueprint - ...
+
 18
+Sign-up or sign-in policy - single policy, allowing to sign-up or sign-in with identity provider (FB, Google).
+Password reset policy - allows to enable fine-grained password to reset on app.
+
 19
+Resources required for VM:
+> Resource Group [to contain VM]
+> Storage accont [to store virtual HD]
+> Operating system disk [to run OS]
+> Virtual network [member of VNet]
+> Network interface [to communicate with network]
+
 20
+Azure Policy - service enabling organizations to create, assign, and manage policies to enforce rules and ensure compliance across cloud resources.
+> AP can audit VM settings [OS, environment, app] requires Desired State Configuration v2 utility [Guest Configuration extension].
+> VM AP - VM must log into Log Analytics workspace [else non-compliant].
+
 
 21
 22
