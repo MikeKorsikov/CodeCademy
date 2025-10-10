@@ -109,8 +109,9 @@ Azure Policy - service enabling organizations to create, assign, and manage poli
 > AP can audit VM settings [OS, environment, app] requires Desired State Configuration v2 utility [Guest Configuration extension].
 > VM AP - VM must log into Log Analytics workspace [else non-compliant].
 
-
 21
+
+
 22
 23
 24
